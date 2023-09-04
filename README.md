@@ -1,12 +1,12 @@
 # An Archive for the Digital Arts Computing Degree Program at Goldsmiths University
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I used the following options:
-✔ Would you like to use TypeScript? No.
-✔ Would you like to use ESLint? Yes.
-✔ Would you like to use Tailwind CSS? Yes.
-✔ Would you like to use `src/` directory? Yes.
-✔ Would you like to use App Router? (recommended) Yes.
-✔ Would you like to customize the default import alias? No.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I used the following options:   
+Would you like to use TypeScript? ✘   
+Would you like to use ESLint? ✔   
+Would you like to use Tailwind CSS? ✔   
+Would you like to use `src/` directory? ✔   
+Would you like to use App Router? (recommended) ✔   
+Would you like to customize the default import alias? ✘   
 
 ## Getting Started
 
