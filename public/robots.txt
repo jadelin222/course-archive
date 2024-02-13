@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /
+
+User-agent: googlebot
+User-agent: Googlebot-Video
+User-agent: Applebot
+User-agent: bingbot
+User-agent: DuckDuckBot
+User-agent: archive.org_bot
+
+Allow: /*
+Disallow: 
+
+User-agent: AdsBot-Google
+User-agent: Twitterbot
+User-agent: Adidxbot
+Allow: /
+
+User-agent: Yahoo Pipes 1.0
+User-agent: Facebot
+User-agent: externalfacebookhit
+Disallow: /
