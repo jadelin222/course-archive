@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div> 
-        You are on the <Link href="/about">home page.</Link> 
+        Welcome to the Digital Arts Computing home page. 
       </div>
       <div>
         <video width="320px" height="320px" autoPlay loop>

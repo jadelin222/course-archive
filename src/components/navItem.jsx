@@ -4,12 +4,12 @@
 //The behaviour below switches the html class reference based upon whether the item is active or not. 
 
 import Link from "next/link";
+import './navItemStyle.css';
+
 const NavItem = ({text, href, active}) => {
     return(
-        <Link href={href}>
-            <a className={`nav__item ${active ? "active" : ""}`}>
+        <Link href={href} className={`nav__item ${active ? "active" : ""}`}>
             {text}
-            </a>
         </Link>
     );
 }
