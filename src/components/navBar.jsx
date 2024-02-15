@@ -7,7 +7,7 @@ import NavItem from "./navItem"
 const NAV_LIST = [
     { text: "Home", href: "/" },
     { text: "About", href: "/about" },
-    { text: "Contact Us", href: "/contact" },
+    { text: "Contact Us", href: "mailto:computing@gold.ac.uk" },
 ];
 
 const NavBar = () => {
