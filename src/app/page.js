@@ -9,28 +9,66 @@ import React, { useEffect, useRef } from 'react';
 
 export default function Home() {
   const animationContainer = useRef(null);
+  let animationInstance = null;
 
   useEffect(() => {
     // Ensure lottie and the container ref are available
     if (animationContainer.current) {
-      const animation = lottie.loadAnimation({
+      animationInstance = lottie.loadAnimation({
         container: animationContainer.current, // the dom element that will contain the animation
         renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        // Path to your Lottie animation JSON
-        // Adjust the path as necessary if you place the file in a different location
-        path: 'jsonAnims/Lottie Lego.json',
+        loop: false,
+        autoplay: false,
+        path: 'jsonAnims/fogrot.json',
+        rendererSettings: {
+          // preserveAspectRatio: 'none' // This will stretch the animation to fill the container
+          preserveAspectRatio: 'xMidYMid slice'
+        },
       });
 
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const scrollMax = document.documentElement.scrollHeight - window.innerHeight;
+        
+        // Calculate the current frame of the lottie animation
+        const currentFrame = animationInstance.totalFrames * (scrollPosition / scrollMax);
+        
+        // Go to the calculated frame and stop there
+        animationInstance.goToAndStop(currentFrame, true);
+      };
+
+      // Add event listener for scroll
+      window.addEventListener('scroll', handleScroll);
+
+      // Clean up function
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+        animationInstance.destroy();
+      };
       // Optional: Clean up when the component unmounts
-      return () => animation.destroy();
+      // return () => animation.destroy();
     }
   }, []);
+
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div> 
-      The Bc Digital Arts Computing cohort present their
+    <>
+      {/* Full-screen Animation container */}
+      <div 
+        ref={animationContainer} 
+        style={{
+          position: 'fixed', // Use 'absolute' if you don't want it to stay fixed during scroll
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh', //
+          zIndex: -1, // Ensure it stays behind other content
+        }}
+      ></div>
+      
+      <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ position: 'relative', zIndex: 1 }}>
+        <div> 
+        The BSc Digital Arts Computing cohort present their
 degree show exhibition 'Fog Rot'. Working at the
 hybrid edges between art and technology, its artists
 exhibit work spanning sculpture, multimedia
@@ -52,15 +90,11 @@ can offer a different language for understanding the
 material relationships between technology, art and
 the ways in which forgetting gives us the task of re-
 remembering what it is that we are trying to say.
-      </div>
-      <div>
-        {/* Animation container */}
-        <div ref={animationContainer} style={{width: '320px', height: '320px'}}></div>
-        {/* <video width="320px" height="320px" autoPlay loop>
-          <source src="videos/byNateTownsend.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>  */}
-      </div>
-    </main>
-  )
+
+        </div>
+
+      </main>
+    </>
+  );
 }
+
