@@ -7,7 +7,9 @@ import NavItem from "./navItem"
 const NAV_LIST = [
     { text: "Home", href: "/" },
     { text: "About", href: "/about" },
-    { text: "Contact Us", href: "mailto:computing@gold.ac.uk" },
+    { text: "Schedule", href: "/schedule" },
+    // { text: "FogRot", href: "/fogrot" },
+    // { text: "Contact Us", href: "mailto:computing@gold.ac.uk" },
 ];
 
 const NavBar = () => {
@@ -21,3 +23,22 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+// const NavBar = ({ customNavList }) => {
+//   const NAV_LIST = customNavList || [
+//       { text: "Home", href: "/" },
+//       { text: "About", href: "/about" },
+//       { text: "FogRot", href: "/fogrot" },
+//       { text: "Contact Us", href: "mailto:computing@gold.ac.uk" },
+//   ];
+
+//   return (
+//       <header>
+//           {NAV_LIST.map((item, index) => (
+//               <NavItem key={index} text={item.text} href={item.href} active={item.active} />
+//           ))}
+//       </header>
+//   );
+// };
+
+// export default NavBar;

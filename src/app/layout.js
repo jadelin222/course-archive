@@ -17,5 +17,17 @@ export default function RootLayout({ children }) {
         </body>
     </html>
   )
+  
+  
+  // return (
+    // <html lang="en">
+    //     <body>
+    //     {displayNavBar && <NavBar />}
+    //     {children}
+    //     </body>
+    // </html>
+  // )
+  
+  
 }
 
