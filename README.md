@@ -9,7 +9,7 @@ Would you like to use App Router? (recommended) ✔
 Would you like to customize the default import alias? ✘   
 
 ## Getting Started
-
+first you need you install node.js in your PATH.
 First, run the development server:
 
 ```bash
