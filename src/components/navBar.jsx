@@ -14,7 +14,7 @@ const NAV_LIST = [
 
 const NavBar = () => {
     return (
-      <header>
+      <header className="sticky-navbar">
       {NAV_LIST.map((item, index) => (
         <NavItem key={index} text={item.text} href={item.href} active={item.active} />
       ))}
