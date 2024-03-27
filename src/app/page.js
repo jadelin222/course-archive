@@ -53,6 +53,7 @@ export default function Home() {
   
   return (
     <>
+
       {/* Full-screen Animation container */}
       <div 
         ref={animationContainer} 

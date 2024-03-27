@@ -35,7 +35,18 @@ body {
 }
 .sticky-navbar {
   position: fixed;
-
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
   z-index: 1000; 
-  padding-top: 10px;
+  align-items: center;
 }
+.nav-icon {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* This keeps the aspect ratio of the image */
+}
+.nav__item {
+  font-size: 21px;
+  margin: 1rem;
+}
+

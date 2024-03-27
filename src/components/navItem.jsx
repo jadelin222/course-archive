@@ -6,10 +6,11 @@
 import Link from "next/link";
 import './navItemStyle.css';
 
-const NavItem = ({text, href, active}) => {
+const NavItem = ({children, href, active}) => {
     return(
         <Link href={href} className={`nav__item ${active ? "active" : ""}`}>
-            {text}
+            {children}
+            {/* {text} */}
         </Link>
     );
 }
