@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Home1() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div> 
+      {/* <div> 
       The Bc Digital Arts Computing cohort present their
 degree show exhibition 'Fog Rot'. Working at the
 hybrid edges between art and technology, its artists
@@ -29,7 +29,7 @@ can offer a different language for understanding the
 material relationships between technology, art and
 the ways in which forgetting gives us the task of re-
 remembering what it is that we are trying to say.
-      </div>
+      </div> */}
     </main>
   )
 }
