@@ -8,8 +8,9 @@ import NavItem from "./navItem"
 const NAV_LIST = [
     { imgSrc: "/images/forRot_icon.png", href: "/" }, // Adjust the path to your actual image location
     // { text: "Home", href: "/" },
-    { text: "About", href: "/about" },
+    // { text: "About", href: "/about" },
     { text: "Schedule", href: "/schedule" },
+    { text: "Floorplan", href: "/schedule" }
     // { text: "FogRot", href: "/fogrot" },
     // { text: "Contact Us", href: "mailto:computing@gold.ac.uk" },
 ];
