@@ -7,10 +7,9 @@ import NavItem from "./navItem"
 //Declare and initialise an array of Navigation Item properties. 
 const NAV_LIST = [
     { imgSrc: "/images/forRot_icon.png", href: "/" }, // Adjust the path to your actual image location
-    // { text: "Home", href: "/" },
-    // { text: "About", href: "/about" },
-    { text: "Performance & Screening", href: "/schedule" },
-    { text: "Floorplan", href: "/schedule" }
+    { text: "Schedule", href: "/images/dac_icon.png" },
+    // { text: "Floorplan", href: "/floorplan" }
+    { text: "Floorplan", href: "/images/floorplan.png" }
     // { text: "FogRot", href: "/fogrot" },
     // { text: "Contact Us", href: "mailto:computing@gold.ac.uk" },
 ];
@@ -26,13 +25,6 @@ const NavBar = () => {
     ))}
     </header>
   );
-    // return (
-    //   <header className="sticky-navbar">
-    //   {NAV_LIST.map((item, index) => (
-    //     <NavItem key={index} text={item.text} href={item.href} active={item.active} />
-    //   ))}
-    //   </header>
-    // );
 };
 
 export default NavBar;

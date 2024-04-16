@@ -47,9 +47,13 @@ export default function Footer() {
       </div>
       {/* Second section of the footer */}
       <div>
-        {/* Provide a link to your Twitter profile */}
+        {/* provide a link to your social profile */}
         <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
           Find us on Instagram
+        </a>
+        <br></br>
+        <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
+          Check out our zine
         </a>
       </div>
     </footer>
