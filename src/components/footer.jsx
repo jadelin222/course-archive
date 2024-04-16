@@ -14,16 +14,16 @@ export default function Footer() {
       <div>
         <div className='flex-footer-top'>
           <div className='footer-flex-item'>
-            <h3>Time</h3>
-            <p>25 April, 2024</p>
+            <h3>Opening Time</h3>
+            <p>[25 April, 2024]</p>
             <p>6PM - 10PM</p>
-            <p>26-27 April, 2024</p>
+            <p>[26-27 April, 2024]</p>
             <p>10AM - 8PM</p>
-            <p>28 April, 2024</p>
+            <p>[28 April, 2024]</p>
             <p>10AM - 5PM</p>
           </div>
           <div className='footer-flex-item'>
-            <h3>How to Get Here</h3>
+            <h3>Getting Here</h3>
             <a href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view">
             St. James Hatcham Building
             <Image
