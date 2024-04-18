@@ -14,16 +14,16 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-} 
+}
 
 header {
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 400;
 }
-
 body {
   color: aliceblue;
+
   background: linear-gradient(
       to bottom,
       transparent,
@@ -33,9 +33,11 @@ body {
   background: black;
 
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  font-family: "Arial", sans-serif;
+  /* font-family: 'Arial', sans-serif; */
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter',
+    'Lucida Typewriter', monospace;
   font-weight: 400;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: monospace; */
   font-size: 16px;
 }
 .sticky-navbar {
@@ -43,7 +45,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  z-index: 1000; 
+  z-index: 1000;
   align-items: center;
 }
 .nav-icon {
@@ -54,12 +56,13 @@ body {
   font-size: 21px;
   margin: 1rem;
 }
-.content{
+.content {
   width: 100vw;
- display: flex;
- flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-.left, .right{
+.left,
+.right {
   flex: 1 1 50%;
   box-sizing: border-box;
   padding: 2rem;
@@ -69,7 +72,8 @@ body {
 
 /* Adjust layout for smaller screens */
 @media (max-width: 600px) {
-  .left, .right {
+  .left,
+  .right {
     flex-basis: 100%; /* Each takes full width on smaller screens */
     width: 100%;
     padding: 0.5rem;
