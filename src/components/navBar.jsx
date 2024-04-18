@@ -7,7 +7,7 @@ import NavItem from "./navItem"
 //Declare and initialise an array of Navigation Item properties. 
 const NAV_LIST = [
     { imgSrc: "/images/forRot_icon.png", href: "/" }, // Adjust the path to your actual image location
-    { text: "Schedule", href: "/images/dac_icon.png" },
+    { text: "Fog Rot 2024", href: "/images/dac_icon.png" },
     // { text: "Floorplan", href: "/floorplan" }
     { text: "Floorplan", href: "/images/floorplan.png" }
     // { text: "FogRot", href: "/fogrot" },

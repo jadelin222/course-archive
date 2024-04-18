@@ -5,6 +5,10 @@ import Link from 'next/link'
 
 import lottie from 'lottie-web';
 import React, { useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
+
 //The page.js file is the default 'page' of it's respective directory. This is the default 'home' page, so it's URL path will be 'example.com/'
 
 export default function Home() {
@@ -62,13 +66,14 @@ export default function Home() {
           top: 0,
           left: 0,
           width: '100vw',
-          height: '100vh', //
+          // height: '100vh', //
+          height:'100%',
           zIndex: -1, // Ensure it stays behind other content
         }}
       ></div>
       
       <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ position: 'relative', zIndex: 1 }}>
-        <div>
+        <div className='content'>
           <div className='left'>
             <div
             style={{
@@ -77,10 +82,10 @@ export default function Home() {
               WebkitBackdropFilter: 'blur(10px)', // For Safari browser support
               // color: 'black', // Adjust the text color 
               padding: '20px',
-              margin: '20px',
+              // margin: '20px',
               // borderRadius: '10px',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
-              maxWidth: '40vw', 
+              // maxWidth: '40vw', 
               lineHeight: '1.6', 
               // fontSize: '18px', 
               // fontWeight: 'normal', 
@@ -93,7 +98,7 @@ export default function Home() {
                   backdropFilter: 'blur(10px)',
                   WebkitBackdropFilter: 'blur(10px)', // For Safari browser support
                   padding: '20px', 
-                  margin: '20px', 
+                  // margin: '20px', 
                 
                   // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
                 
@@ -112,6 +117,14 @@ export default function Home() {
                   xxxxx/xxx/xxx/  ssssssdhdjdj
                   <br></br>
                   xxxxx/xxx/xxx/  ssssssdhdjdj
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <img src="/images/StjamesHatchamresized.jpg" alt="Descriptive Alt Text" style={{ marginRight: '10px', width: '80%' }} />
+              <a href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
+                Read our Zine online
+              </a>
+<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <i className="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> {/* Replace 'fa-icon-name' with your specific icon class name */}
             </div>
           </div>
           <div className='right'>
