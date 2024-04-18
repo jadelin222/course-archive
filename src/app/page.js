@@ -7,7 +7,25 @@ import lottie from 'lottie-web';
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import Cardd from '../components/cardd';
+import Footer from '../components/footer';
+import Card from '../components/Card';
 
+const cardData = [
+  {
+    title: "First Card",
+    description: "This is the description for the first card.",
+    imageUrl: "/path/to/your/first-image.jpg",
+    link: "/first-link-path"
+  },
+  {
+    title: "Second Card",
+    description: "This is the description for the second card.",
+    imageUrl: "/path/to/your/second-image.jpg",
+    link: "/second-link-path"
+  },
+  // Add more card objects as needed
+];
 
 //The page.js file is the default 'page' of it's respective directory. This is the default 'home' page, so it's URL path will be 'example.com/'
 
@@ -123,12 +141,25 @@ export default function Home() {
               <a href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
                 Read our Zine online
               </a>
-<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               <i className="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> {/* Replace 'fa-icon-name' with your specific icon class name */}
             </div>
           </div>
           <div className='right'>
             Selected Artworks Section
+            {/* cards here */}
+            <div>
+              {cardData.map((card, index) => (
+                <Cardd
+                  key={index}
+                  title={card.title}
+                  description={card.description}
+                  imageUrl={card.imageUrl}
+                  link={card.link}
+                />
+              ))}
+            </div>
+     
           </div>
         </div>
        

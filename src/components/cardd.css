@@ -1,0 +1,31 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px; /* Adjust based on your layout needs */
+    margin: 10px;
+    border-radius: 5px; /* Optional: for rounded corners */
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0; /* Optional: for rounded corners at the top */
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .card-link {
+    color: blue;
+    text-decoration: none;
+  }
