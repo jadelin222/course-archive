@@ -20,7 +20,13 @@ hr {
 }
 .footer-flex-item h3 {
   padding-bottom: 10px;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 22px;
 }
-/* .footer-flex-item  */
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .footer-flex-item {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

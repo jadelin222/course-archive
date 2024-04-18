@@ -6,6 +6,7 @@ import Image from 'next/image';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {faBookOpen} from '@fortawesome/free-solid-svg-icons';
 // import { FaGithub, FaTwitter } from 'react-icons/fa';
 
 // Define the Footer component
@@ -55,11 +56,13 @@ export default function Footer() {
       {/* Second section of the footer */}
       <div>
         {/* provide a link to your social profile */}
-        <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
-          Find us on Instagram
-        </a>
         <FontAwesomeIcon style={{ 'margin-left': '6px' }} icon={faInstagram} />
+        <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
+        digital_arts_computing
+        </a>
+        
         <br></br>
+        <FontAwesomeIcon icon={faBookOpen} />
         <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
           Check out our zine
         </a>

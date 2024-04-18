@@ -1,5 +1,7 @@
-import React from 'react';
+'use client'
 
+import React from 'react';
+import './cardd.css';
 
 const Card = ({ title, imageUrl, description, link }) => {
   return (

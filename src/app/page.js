@@ -6,7 +6,7 @@ import Link from 'next/link'
 import lottie from 'lottie-web';
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faLink } from '@fortawesome/free-solid-svg-icons';
 import Cardd from '../components/cardd';
 
 const cardData = [
@@ -139,7 +139,7 @@ export default function Home() {
               <a href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
                 Read our Zine online
               </a>
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <FontAwesomeIcon icon={faLink} />
               <i className="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> {/* Replace 'fa-icon-name' with your specific icon class name */}
             </div>
           </div>
