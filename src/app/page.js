@@ -8,8 +8,6 @@ import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import Cardd from '../components/cardd';
-import Footer from '../components/footer';
-import Card from '../components/Card';
 
 const cardData = [
   {
