@@ -56,13 +56,13 @@ export default function Footer() {
       {/* Second section of the footer */}
       <div>
         {/* provide a link to your social profile */}
-        <FontAwesomeIcon style={{ 'margin-left': '6px' }} icon={faInstagram} />
+        <FontAwesomeIcon style={{ 'paddingRight': '6px' }} icon={faInstagram} />
         <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
         digital_arts_computing
         </a>
         
         <br></br>
-        <FontAwesomeIcon icon={faBookOpen} />
+        <FontAwesomeIcon style={{ 'paddingRight': '6px' }} icon={faBookOpen} />
         <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
           Check out our zine
         </a>

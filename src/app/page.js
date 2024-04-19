@@ -91,6 +91,15 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ position: 'relative', zIndex: 1 }}>
         <div className='content'>
           <div className='left'>
+            <div>
+              <a>
+                <h2 
+                style={{
+                  fontSize:'48px',
+                  textShadow: '2px 4px 4px rgba(46,91,173,0.6)'
+              }}>Fog Rot?</h2>
+              </a>
+            </div>
             <div
             style={{
               background: 'linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0.2))',
@@ -108,7 +117,7 @@ export default function Home() {
             }
             }>   The BSc Digital Arts Computing cohort present their degree show exhibition &apos;Fog Rot&apos;. Working at the hybrid edges between art and technology, its artists exhibit work spanning sculpture, multimedia installation, performance, durational art, immersive soundscapes, and more. &apos;Fog Rot&apos; explores cultural conditions of forgetting and the transience of memory in times of constant change and optimisation. By positioning &apos;Fog&apos; and &apos;Rot&apos; as an anagram for &apos;forgot&apos;, we suggest that we have even forgotten what it is to forget in the first place. Processes of memory decay can be paralleled to ecological processes of decomposition, where dampness grows, with slowness, moving in uncanny and ghostlike ways. What can slowness offer us in the face of ongoing change? &apos;Fog Rot&apos; questions the role of technology in contributing to accelerated narratives of catastrophe, asking how digital decay can offer a different language for understanding the material relationships between technology, art and the ways in which forgetting gives us the task of re-remembering what it is that we are trying to say.
             </div>
-              <div
+              {/* <div
                 style={{
                   background: 'linear-gradient(to top right, rgba(200,200,255,0.1), rgba(255,255,255,0.2))',
                   backdropFilter: 'blur(10px)',
@@ -133,9 +142,9 @@ export default function Home() {
                   xxxxx/xxx/xxx/  ssssssdhdjdj
                   <br></br>
                   xxxxx/xxx/xxx/  ssssssdhdjdj
-            </div>
+            </div> */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <img src="/images/StjamesHatchamresized.jpg" alt="Descriptive Alt Text" style={{ marginRight: '10px', width: '80%' }} />
+              <img src="/images/FogRotZine.jpg" alt="zine cover" style={{ marginRight: '10px', width: '100%' }} />
               <a href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
                 Read our Zine online
               </a>
