@@ -28,6 +28,7 @@ const AboutFogRot = () => {
   useEffect(() => {
     // const cw = document.body.clientWidth
     // const ch = document.body.clientHeight
+    const isMobile = window.innerWidth < 600;
     const cw = document.body.clientWidth
     const ch = document.body.clientHeight
 
@@ -219,7 +220,7 @@ const AboutFogRot = () => {
           restitution: 0.9,
           friction: 0.005,
           render: {
-            fillStyle: '#0000ff',
+            // fillStyle: '#0000ff',
             sprite: {
               texture: '/images/favicon_io/apple-touch-icon.png',
               xScale: radius / baseSize, // Adjust these based on your needs
@@ -233,7 +234,7 @@ const AboutFogRot = () => {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-0" style={{ overflow:'hidden' }}>
+    <main className="mainContainer flex min-h-screen flex-col items-center justify-between p-0" style={{ overflow:'hidden' }}>
       <div
             onMouseDown={handleDown}
             onMouseUp={handleUp}
@@ -243,18 +244,18 @@ const AboutFogRot = () => {
             // onTouchMove={handleAddCircle} 
           >
         {/* <div ref={scene} style={{ width: '100%', height: '100%' }} /> */}
-        <div ref={scene} style={{ width: '100%', height: '100%' }}>
+        <div className="sceneContainer" ref={scene} style={{ width: '100%', height: '100%'}}>
 
-          <div className="aboutContainer" ref={divRef1} style={{ position: 'absolute', width: '280px', height: 'auto', transform: 'rotate(-30deg)', zIndex: 10, padding:'1.5rem' }}>
+          <div className="aboutContainer" ref={divRef1} style={{ position: 'absolute', width: '250px', height: 'auto', transform: 'rotate(-30deg)', zIndex: 10, padding:'1.5rem' }}>
             The BSc Digital Arts Computing cohort present their degree show exhibition 'Fog Rot'. Working at the hybrid edges between art and technology, its artists exhibit work spanning sculpture, multimedia installation, performance, durational art, immersive soundscapes, and more.
           </div>
-          <div className="aboutContainer" ref={divRef2} style={{ position: 'absolute', width: '380px', height: 'auto', zIndex: 10 }}>
+          <div className="aboutContainer" ref={divRef2} style={{ position: 'absolute', width: '330px', height: 'auto', zIndex: 10 }}>
             'Fog Rot' explores cultural conditions of forgetting and the transience of memory in times of constant change and optimisation. By positioning 'Fog' and 'Rot' as an anagram for 'forgot', we suggest that we have even forgotten what it is to forget in the first place. Processes of memory decay can be paralleled to ecological processes of decomposition, where dampness grows, with slowness, moving in uncanny and ghostlike ways. What can slowness offer us in the face of ongoing change?
           </div>
-          <div className="aboutContainer" ref={divRef3} style={{ position: 'absolute', width: '380px', height: 'auto', zIndex: 10 }}>
+          <div className="aboutContainer" ref={divRef3} style={{ position: 'absolute', width: '350px', height: 'auto', zIndex: 10 }}>
             'Fog Rot' questions the role of technology in contributing to accelerated narratives of catastrophe, asking how digital decay can offer a different language for understanding the material relationships between technology, art and the ways in which forgetting gives us the task of re-remembering what it is that we are trying to say.
           </div>
-          <div className="zineContainer" ref={divRef4} style={{ position: 'absolute', width: '380px', height: 'auto', zIndex: 10 }}>
+          <div className="zineContainer" ref={divRef4} style={{ position: 'absolute', width: '320px', height: 'auto', zIndex: 10 }}>
             
             <Link href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer">
               <Image src='/images/zinecover.png' alt='image' width={795} height={1118}>

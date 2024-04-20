@@ -1,3 +1,7 @@
+.sceneContainer{
+    width: 100vw;
+    height: 100vh;
+}
 .aboutContainer{
     padding: 1.5rem;
     background-color: black;
@@ -5,3 +9,20 @@
 .wordArtContainer{
     background-color: transparent;
 }
+
+@media (max-width: 600px) {
+    .aboutContainer, .wordArtContainer, .zineContainer {
+      width: 90%;
+      left: 5%;
+      transform: rotate(0deg);
+    }
+    .sceneContainer {
+        height: 200vh;
+    }
+    .mainContainer {
+        height: 200vh;
+        /* overflow: visible; */
+        align-items: flex-start; /* Align items to the start of the main axis */
+        justify-content: flex-start; /* Align content to the start of the cross axis */
+    }
+  }
