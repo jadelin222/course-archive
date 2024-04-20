@@ -45,6 +45,8 @@ export default function Footer() {
             <p>- Turn off New Cross road and walk up St James</p>
             <p style={{ paddingBottom: '12px' }}>- The St James Hatcham Building is at the end of the road</p>
           </div>
+
+          
         </div>
 
         {/* Display your name and the current year */}

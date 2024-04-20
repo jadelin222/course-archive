@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import NavBar from '../components/navBar';
-import Footer from '../components/footer';
+// import Footer from '../components/footer';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 // Prevent fontawesome from adding its CSS since we did it manually above:
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           </div>
          {children}
          {/* Include the Footer component */}
-        <Footer />
+       
         </body>
     </html>
   )
