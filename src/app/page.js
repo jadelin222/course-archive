@@ -92,17 +92,17 @@ export default function Home() {
         <div className='content'>
           <div className='left'>
             <div>
-              <a href='/aboutFogRot'>
-                <h2 
-                style={{
-                  fontSize:'48px',
-                  textShadow: '2px 4px 4px rgba(46,91,173,0.6)',
-                  textDecoration: 'underline',
-                  textDecorationThickness: '2px'
+
+            <Link href="/AboutFogRot">
+              <h2 style={{
+                fontSize: '48px',
+                textShadow: '2px 4px 4px rgba(46,91,173,0.6)',
+                textDecoration: 'underline',
+                textDecorationThickness: '2px'
               }}>Fog Rot?</h2>
-              </a>
+            </Link>
             </div>
-            <div
+            {/* <div
             style={{
               background: 'linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0.2))',
               backdropFilter: 'blur(10px)', 
@@ -118,7 +118,7 @@ export default function Home() {
               // fontWeight: 'normal', 
             }
             }>   The BSc Digital Arts Computing cohort present their degree show exhibition &apos;Fog Rot&apos;. Working at the hybrid edges between art and technology, its artists exhibit work spanning sculpture, multimedia installation, performance, durational art, immersive soundscapes, and more. &apos;Fog Rot&apos; explores cultural conditions of forgetting and the transience of memory in times of constant change and optimisation. By positioning &apos;Fog&apos; and &apos;Rot&apos; as an anagram for &apos;forgot&apos;, we suggest that we have even forgotten what it is to forget in the first place. Processes of memory decay can be paralleled to ecological processes of decomposition, where dampness grows, with slowness, moving in uncanny and ghostlike ways. What can slowness offer us in the face of ongoing change? &apos;Fog Rot&apos; questions the role of technology in contributing to accelerated narratives of catastrophe, asking how digital decay can offer a different language for understanding the material relationships between technology, art and the ways in which forgetting gives us the task of re-remembering what it is that we are trying to say.
-            </div>
+            </div> */}
               {/* <div
                 style={{
                   background: 'linear-gradient(to top right, rgba(200,200,255,0.1), rgba(255,255,255,0.2))',
