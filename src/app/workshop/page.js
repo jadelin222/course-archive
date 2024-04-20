@@ -2,15 +2,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-
+import styles from './workshop.module.css';
 //This page.js file is located inside the /about directory, so its URL path becomes 'example.com/about'
 
 export default function Workshop() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-10">
       <div>
         <div className='workshop-info'>
-          <h1>
+          <h1 className={styles.title}>
           Fog Rot: Chrono-Cartography Workshop:
           </h1>
           <img src='/images/workshop1.jpg' alt="workshop image">

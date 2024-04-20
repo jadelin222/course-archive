@@ -92,11 +92,13 @@ export default function Home() {
         <div className='content'>
           <div className='left'>
             <div>
-              <a>
+              <a href='/aboutFogRot'>
                 <h2 
                 style={{
                   fontSize:'48px',
-                  textShadow: '2px 4px 4px rgba(46,91,173,0.6)'
+                  textShadow: '2px 4px 4px rgba(46,91,173,0.6)',
+                  textDecoration: 'underline',
+                  textDecorationThickness: '2px'
               }}>Fog Rot?</h2>
               </a>
             </div>

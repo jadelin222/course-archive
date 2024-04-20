@@ -88,7 +88,7 @@ export default function Home() {
         }}
       ></div>
       
-      <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ position: 'relative', zIndex: 1 }}>
+      <main className="flex min-h-screen flex-col items-center justify-between p-12" style={{ position: 'relative', zIndex: 1 }}>
         <div className='content'>
           <div className='left'>
             <div

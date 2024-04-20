@@ -60,11 +60,11 @@ body {
   font-size: 21px;
   margin: 1rem;
 }
-.content {
+/* .content {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-}
+} */
 .left,
 .right {
   flex: 1 1 50%;
