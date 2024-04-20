@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+
 //This page.js file is located inside the /about directory, so its URL path becomes 'example.com/about'
 
 export default function Workshop() {
