@@ -1,6 +1,15 @@
+/* .mainContainer {
+    background-image: url('/images/0001.png'); 
+    background-repeat: repeat; 
+    background-size: auto; 
+} */
+
 .sceneContainer{
     width: 100vw;
     height: 100vh;
+    background-color: grey;
+    background-repeat: repeat;
+    background-size: 250px 250px; 
 }
 .aboutContainer{
     padding: 1.5rem;
@@ -21,7 +30,6 @@
     }
     .mainContainer {
         height: 200vh;
-        /* overflow: visible; */
         align-items: flex-start; /* Align items to the start of the main axis */
         justify-content: flex-start; /* Align content to the start of the cross axis */
     }

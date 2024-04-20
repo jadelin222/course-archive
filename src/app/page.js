@@ -39,7 +39,16 @@ const AboutFogRot = () => {
         width: cw,
         height: ch,
         wireframes: false,
-        background: 'grey'
+        background: 'url("/images/rabbit.png")'
+        // background: 'grey',
+      //   render: {
+      //     sprite: {
+      //         texture: './img/head.png'
+      //     }
+      // }
+        // backgroundImage: 'url("public/images/0001.png")', // Ensure this is a valid URL and wrapped in url()
+        //backgroundRepeat: 'repeat', // Set as a string
+        // backgroundSize: 'auto'
       }
     })
 
@@ -307,7 +316,7 @@ const AboutFogRot = () => {
             </div>
             <div className="footer-flex-item">
             <h3>Getting Here</h3>
-            <a href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view">
+            <Link href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view" target="_blank" rel="noopener noreferrer">
               St. James Hatcham Building (AKA The Church)
               <Image
                 src="/images/StjamesHatchamresized.jpg"
@@ -315,7 +324,7 @@ const AboutFogRot = () => {
                 height={80}
                 alt="Picture of the St. James Hatcham Building"
               />
-            </a>
+            </Link>
             <p>- Turn off New Cross road and walk up St James</p>
             <p style={{ paddingBottom: '12px' }}>- The St James Hatcham Building is at the end of the road</p>
           </div>

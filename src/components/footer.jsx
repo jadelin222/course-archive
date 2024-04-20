@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
           <div className="footer-flex-item">
             <h3>Getting Here</h3>
-            <a href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view">
+            <Link href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view" target="_blank" rel="noopener noreferrer">
               St. James Hatcham Building (AKA The Church)
               <Image
                 src="/images/StjamesHatchamresized.jpg"
@@ -41,7 +41,7 @@ export default function Footer() {
                 height={80}
                 alt="Picture of the St. James Hatcham Building"
               />
-            </a>
+            </Link>
             <p>- Turn off New Cross road and walk up St James</p>
             <p style={{ paddingBottom: '12px' }}>- The St James Hatcham Building is at the end of the road</p>
           </div>
@@ -59,15 +59,15 @@ export default function Footer() {
       <div>
         {/* provide a link to your social profile */}
         <FontAwesomeIcon style={{ 'paddingRight': '6px' }} icon={faInstagram} />
-        <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
+        <Link href="https://www.instagram.com/digital_arts_computing/?hl=en" target="_blank" rel="noopener noreferrer">
         digital_arts_computing
-        </a>
+        </Link>
         
         <br></br>
         <FontAwesomeIcon style={{ 'paddingRight': '6px' }} icon={faBookOpen} />
-        <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
+        <Link href="https://www.instagram.com/digital_arts_computing/?hl=en" target="_blank" rel="noopener noreferrer">
           Check out our zine
-        </a>
+        </Link>
       </div>
     </footer>
   );
