@@ -34,13 +34,14 @@ export default function Footer() {
           <div className="footer-flex-item">
             <h3>Getting Here</h3>
             <Link href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view" target="_blank" rel="noopener noreferrer">
-              St. James Hatcham Building (AKA The Church)
               <Image
                 src="/images/StjamesHatchamresized.jpg"
                 width={150}
                 height={80}
                 alt="Picture of the St. James Hatcham Building"
+                style={{ marginBottom: '0.4rem' }}
               />
+               <h5 style={{ fontWeight:'bold', marginBottom: '0.6rem'}}>St. James Hatcham Building (AKA The Church)</h5>
             </Link>
             <p>- Turn off New Cross road and walk up St James</p>
             <p style={{ paddingBottom: '12px' }}>- The St James Hatcham Building is at the end of the road</p>

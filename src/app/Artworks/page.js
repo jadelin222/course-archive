@@ -76,10 +76,10 @@ export default function Artworks() {
         }}
       ></div>
       
-      <main className="flex min-h-screen flex-col items-center justify-between p-12" style={{ position: 'relative', zIndex: 1 }}>
+      <main className="flex min-h-screen flex-col items-center justify-between p-2" style={{ position: 'relative', zIndex: 1, paddingTop:'3rem' }}>
         <div className='content'>
           <div className='left'>
-            <div>
+            {/* <div>
 
             <Link href="/">
               <h2 style={{
@@ -89,49 +89,6 @@ export default function Artworks() {
                 textDecorationThickness: '2px'
               }}>Fog Rot?</h2>
             </Link>
-            </div>
-            {/* <div
-            style={{
-              background: 'linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0.2))',
-              backdropFilter: 'blur(10px)', 
-              WebkitBackdropFilter: 'blur(10px)', // For Safari browser support
-              // color: 'black', // Adjust the text color 
-              padding: '20px',
-              // margin: '20px',
-              // borderRadius: '10px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
-              // maxWidth: '40vw', 
-              lineHeight: '1.6', 
-              // fontSize: '18px', 
-              // fontWeight: 'normal', 
-            }
-            }>   The BSc Digital Arts Computing cohort present their degree show exhibition &apos;Fog Rot&apos;. Working at the hybrid edges between art and technology, its artists exhibit work spanning sculpture, multimedia installation, performance, durational art, immersive soundscapes, and more. &apos;Fog Rot&apos; explores cultural conditions of forgetting and the transience of memory in times of constant change and optimisation. By positioning &apos;Fog&apos; and &apos;Rot&apos; as an anagram for &apos;forgot&apos;, we suggest that we have even forgotten what it is to forget in the first place. Processes of memory decay can be paralleled to ecological processes of decomposition, where dampness grows, with slowness, moving in uncanny and ghostlike ways. What can slowness offer us in the face of ongoing change? &apos;Fog Rot&apos; questions the role of technology in contributing to accelerated narratives of catastrophe, asking how digital decay can offer a different language for understanding the material relationships between technology, art and the ways in which forgetting gives us the task of re-remembering what it is that we are trying to say.
-            </div> */}
-              {/* <div
-                style={{
-                  background: 'linear-gradient(to top right, rgba(200,200,255,0.1), rgba(255,255,255,0.2))',
-                  backdropFilter: 'blur(10px)',
-                  WebkitBackdropFilter: 'blur(10px)', // For Safari browser support
-                  padding: '20px', 
-                  // margin: '20px', 
-                
-                  // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
-                
-                }
-                }> 
-                  Guest-talk Schedule?
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
             </div> */}
          
           </div>
@@ -149,6 +106,10 @@ export default function Artworks() {
                     keywords={card.keywords}
                     imageUrl={card.imageUrl}
                     link={card.link}
+                    socialLink={card.socialLink}
+                    socialText={card.socialText}
+                    socialLink2={card.socialLink2}
+                    socialText2={card.socialText2}
                   />
                 ))}
               </div>
