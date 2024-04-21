@@ -1,36 +1,86 @@
-/* .mainContainer {
-    background-image: url('/images/0001.png'); 
-    background-repeat: repeat; 
-    background-size: auto; 
-} */
-
+.mainContainer {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
 .sceneContainer{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     background-color: grey;
     background-repeat: repeat;
     background-size: 250px 250px; 
 }
 .aboutContainer{
-    padding: 1.5rem;
+    position:absolute;
+    height: auto; 
+    z-index: 10;
+    padding: 1rem;
     background-color: black;
+   
+}
+.txt1{
+    width: 250px;
+    transform: rotate(-30deg);
+    background:linear-gradient(to top right, rgba(200,200,255,0.1), rgba(255,255,255,0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) 
+}
+.txt2{
+    /* width: 330px; */
+    width: 35vw;
+}
+.txt3{
+    /* width: 350px; */
+    width: 40vw;
 }
 .wordArtContainer{
+    position: absolute;
+    /* width: 380px;  */
+    width: 30vw;
+    height: auto; 
+    z-index: 10;
     background-color: transparent;
 }
-
+.timeContainer{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.zineContainer{
+    position: absolute;
+    width: 25%; 
+    height: auto; 
+    z-index: 10
+}
 @media (max-width: 600px) {
-    .aboutContainer, .wordArtContainer, .zineContainer {
-      width: 90%;
-      left: 5%;
+    .aboutContainer, .wordArtContainer, .zineContainer, .timeContainer {
+      /* width: 90%;
+      left: 5%; */
+
       transform: rotate(0deg);
+    }
+    .aboutContainer, .timeContainer{
+        padding: 0.7rem;
+    }
+    .zineContainer{
+        width: 45%;
     }
     .sceneContainer {
         height: 200vh;
+    }
+    .wordArtContainer{
+        width: 65vw;
     }
     .mainContainer {
         height: 200vh;
         align-items: flex-start; /* Align items to the start of the main axis */
         justify-content: flex-start; /* Align content to the start of the cross axis */
+    }
+    .txt1{
+        width: 50vw;
+    }
+    .txt2{
+        width: 60vw;
     }
   }

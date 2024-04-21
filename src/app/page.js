@@ -40,22 +40,11 @@ const AboutFogRot = () => {
         height: ch,
         wireframes: false,
         background: 'url("/images/rabbit.png")'
-        // background: 'grey',
-      //   render: {
-      //     sprite: {
-      //         texture: './img/head.png'
-      //     }
-      // }
         // backgroundImage: 'url("public/images/0001.png")', // Ensure this is a valid URL and wrapped in url()
         //backgroundRepeat: 'repeat', // Set as a string
         // backgroundSize: 'auto'
       }
     })
-
-    //load forot icon image
-  // const image = new Image();
-  // image.src = '/images/forRot_icon.png'; 
-
 
     const body1 = Bodies.rectangle(cw / 2, -10, cw, 20, { isStatic: true });
     const body2 = Bodies.rectangle(-10, ch / 2, 20, ch, { isStatic: true });
@@ -67,25 +56,34 @@ const AboutFogRot = () => {
       mass: 5,
       restitution: 0.5,
       friction: 0.1,
-      angle:0.2
+      angle:0.2,
+      render: {
+        fillStyle: 'transparent',
+   }
     });
     const body6 = Bodies.rectangle(200, 400, divRef2.current.offsetWidth, divRef2.current.offsetHeight, {
-      isStatic: false, // Make it dynamic
+      isStatic: false, 
       mass: 2,
       restitution: 0.5,
       friction: 0.1,
-      angle:1
+      angle:1,
+      render: {
+        fillStyle: 'transparent',
+   }
     });
-    const body7 = Bodies.rectangle(200, 200, divRef3.current.offsetWidth, divRef3.current.offsetHeight, {
-      isStatic: false, // Make it dynamic
+    const body7 = Bodies.rectangle(200, 420, divRef3.current.offsetWidth, divRef3.current.offsetHeight, {
+      isStatic: false, 
       mass: 4,
       restitution: 0.5,
       friction: 0.2,
-      angle:0.5
+      angle:0.3,
+      render: {
+        fillStyle: 'transparent',
+   }
     });
 //zine
     const body8 = Bodies.rectangle(cw/2, 200, divRef4.current.offsetWidth, divRef4.current.offsetHeight, {
-      isStatic: false, // Make it dynamic
+      isStatic: false, 
       mass: 4,
       restitution: 0.5,
       friction: 0.4,
@@ -93,7 +91,7 @@ const AboutFogRot = () => {
     });
 //floorplan
     const body9 = Bodies.rectangle(cw/2, 400, divRef5.current.offsetWidth, divRef5.current.offsetHeight, {
-      isStatic: false, // Make it dynamic
+      isStatic: false, 
       mass: 4,
       restitution: 0.5,
       friction: 0.4,
@@ -105,7 +103,7 @@ const AboutFogRot = () => {
 
     //workshop
     const body10 = Bodies.rectangle(cw*2/3, 400, divRef6.current.offsetWidth, divRef6.current.offsetHeight, {
-      isStatic: false, // Make it dynamic
+      isStatic: false, 
       mass: 6,
       restitution: 0.5,
       friction: 0.4,
@@ -243,7 +241,7 @@ const AboutFogRot = () => {
   };
 
   return (
-    <main className="mainContainer flex min-h-screen flex-col items-center justify-between p-0" style={{ overflow:'hidden' }}>
+    <main className="mainContainer flex min-h-screen flex-col items-center justify-between p-0">
       <div
             onMouseDown={handleDown}
             onMouseUp={handleUp}
@@ -255,16 +253,16 @@ const AboutFogRot = () => {
         {/* <div ref={scene} style={{ width: '100%', height: '100%' }} /> */}
         <div className="sceneContainer" ref={scene} style={{ width: '100%', height: '100%'}}>
 
-          <div className="aboutContainer" ref={divRef1} style={{ position: 'absolute', width: '250px', height: 'auto', transform: 'rotate(-30deg)', zIndex: 10, padding:'1.5rem' }}>
+          <div className="aboutContainer txt1" ref={divRef1} >
             The BSc Digital Arts Computing cohort present their degree show exhibition 'Fog Rot'. Working at the hybrid edges between art and technology, its artists exhibit work spanning sculpture, multimedia installation, performance, durational art, immersive soundscapes, and more.
           </div>
-          <div className="aboutContainer" ref={divRef2} style={{ position: 'absolute', width: '330px', height: 'auto', zIndex: 10 }}>
+          <div className="aboutContainer txt2" ref={divRef2}>
             'Fog Rot' explores cultural conditions of forgetting and the transience of memory in times of constant change and optimisation. By positioning 'Fog' and 'Rot' as an anagram for 'forgot', we suggest that we have even forgotten what it is to forget in the first place. Processes of memory decay can be paralleled to ecological processes of decomposition, where dampness grows, with slowness, moving in uncanny and ghostlike ways. What can slowness offer us in the face of ongoing change?
           </div>
-          <div className="aboutContainer" ref={divRef3} style={{ position: 'absolute', width: '350px', height: 'auto', zIndex: 10 }}>
+          <div className="aboutContainer txt3" ref={divRef3}>
             'Fog Rot' questions the role of technology in contributing to accelerated narratives of catastrophe, asking how digital decay can offer a different language for understanding the material relationships between technology, art and the ways in which forgetting gives us the task of re-remembering what it is that we are trying to say.
           </div>
-          <div className="zineContainer" ref={divRef4} style={{ position: 'absolute', width: '320px', height: 'auto', zIndex: 10 }}>
+          <div className="zineContainer" ref={divRef4}>
             
             <Link href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer">
               <Image src='/images/zinecover.png' alt='image' width={795} height={1118}>
@@ -274,7 +272,7 @@ const AboutFogRot = () => {
             </Link>
           </div>
 
-          <div className="wordArtContainer" ref={divRef5} style={{ position: 'absolute', width: '380px', height: 'auto', zIndex: 10 }}>
+          <div className="wordArtContainer" ref={divRef5} >
             
             <Link href="/images/floorplan.png" target="_blank" rel="noopener noreferrer">
               <Image src='/images/words/floorPlanTxt.png' alt='image' width={581} height={346}>
@@ -282,7 +280,7 @@ const AboutFogRot = () => {
             </Link>
           </div>
 
-          <div className="wordArtContainer" ref={divRef6} style={{ position: 'absolute', width: '380px', height: 'auto', zIndex: 10 }}>
+          <div className="wordArtContainer" ref={divRef6} >
             
             <Link href="/workshop" target="_blank" rel="noopener noreferrer">
               <Image src='/images/words/workshopTxt.png' alt='image' width={835} height={208}>
@@ -290,7 +288,7 @@ const AboutFogRot = () => {
             </Link>
           </div>
 
-          <div className="wordArtContainer" ref={divRef7} style={{ position: 'absolute', width: '380px', height: 'auto', zIndex: 10 }}>
+          <div className="wordArtContainer" ref={divRef7} >
             
             <Link href="/Artworks" target="_blank" rel="noopener noreferrer">
               <Image src='/images/words/artworksTxt.png' alt='image' width={1354} height={442}>

@@ -76,6 +76,9 @@ body {
 
 /* Adjust layout for smaller screens */
 @media (max-width: 600px) {
+  body{
+    font-size: 13px;
+  }
   .left,
   .right {
     flex-basis: 100%; /* Each takes full width on smaller screens */
