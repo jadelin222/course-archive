@@ -26,6 +26,7 @@ const AboutFogRot = () => {
   const divRef6 = useRef(null);   //workshop link
   const divRef7 = useRef(null);   //time
   const divRef8 = useRef(null);   //location Link
+  const divRef9 = useRef(null);   //gif
 
   useEffect(() => {
     // const cw = document.body.clientWidth
@@ -127,6 +128,19 @@ const AboutFogRot = () => {
    }
     });
 
+    const body13 = Bodies.rectangle(100, 100, divRef9.current.offsetWidth, divRef9.current.offsetHeight, {
+      isStatic: false, // Make it dynamic
+      mass: 3,
+      restitution: 0.5,
+      friction: 0.4,
+      angle:0.5,
+      render: {
+        fillStyle: 'transparent',
+   }
+    });
+
+    
+
      //opentime
      const body12 = Bodies.rectangle(cw*2/3, ch-divRef8.current.offsetHeight, divRef8.current.offsetWidth, divRef8.current.offsetHeight, {
       isStatic: false, // Make it dynamic
@@ -141,7 +155,7 @@ const AboutFogRot = () => {
 
 
     World.add(engine.current.world, [
-      body1, body2, body3, body4, body5, body6, body7, body8, body9, body10, body11, body12])
+      body1, body2, body3, body4, body5, body6, body7, body8, body9, body10, body11, body12, body13])
 
     Engine.run(engine.current)
     Render.run(render)
@@ -184,6 +198,11 @@ const AboutFogRot = () => {
     const halfWidth8 = divRef8.current.offsetWidth / 2;
     const halfHeight8 = divRef8.current.offsetHeight / 2;
     divRef8.current.style.transform = `translate(${body12.position.x - halfWidth8}px, ${body12.position.y - halfHeight8}px) rotate(${body12.angle}rad)`;
+
+    //gif
+    const halfWidth9 = divRef9.current.offsetWidth / 2;
+    const halfHeight9 = divRef9.current.offsetHeight / 2;
+    divRef9.current.style.transform = `translate(${body13.position.x - halfWidth9}px, ${body13.position.y - halfHeight9}px) rotate(${body13.angle}rad)`;
 
     requestAnimationFrame(update);
   };
@@ -300,6 +319,12 @@ const AboutFogRot = () => {
               </Image>
             </Link>
           </div>
+
+          <div className="gif" ref={divRef9} style={{ position: 'absolute', width: '380px', height: 'auto', zIndex: 10 }}>
+              <Image src='/images/eva/eva.gif' alt='image' width={100} height={100}>
+              </Image>
+          </div>
+
           {/* time */}
           <div className="timeContainer" ref={divRef8} style={{ position: 'absolute', width: 'auto', height: 'auto', zIndex: 10 }}>   
             <div className="footer-flex-item">
