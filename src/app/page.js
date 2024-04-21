@@ -2,6 +2,7 @@
 import '../styles/home.css';
 import Image from 'next/image'
 import Link from 'next/link'
+// import { useRouter } from 'next/router';
 
 //This page.js file is located inside the /about directory, so its URL path becomes 'example.com/about'
 import React, { useEffect, useRef } from 'react';
@@ -246,6 +247,7 @@ const AboutFogRot = () => {
             onMouseDown={handleDown}
             onMouseUp={handleUp}
             onMouseMove={handleAddCircle}
+            // disable mobile interation, uncomment to enable
             // onTouchStart={handleDown} 
             // onTouchEnd={handleUp}   
             // onTouchMove={handleAddCircle} 

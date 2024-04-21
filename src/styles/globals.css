@@ -60,18 +60,15 @@ body {
   font-size: 21px;
   margin: 1rem;
 }
-/* .content {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-} */
+
 .left,
 .right {
+  width: 50vw;
   flex: 1 1 50%;
   box-sizing: border-box;
   padding: 2rem;
   /* debug lines, will remove later */
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 /* Adjust layout for smaller screens */

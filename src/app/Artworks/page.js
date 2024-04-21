@@ -2,29 +2,16 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-
+// import { useRouter } from 'next/router';
 import lottie from 'lottie-web';
 import React, { useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLink } from '@fortawesome/free-solid-svg-icons';
 import Cardd from '../../components/cardd';
 import Footer from '../../components/footer';
+import styles from './artworks.module.css';
 
-const cardData = [
-  {
-    title: "First Card",
-    description: "This is the description for the first card.",
-    imageUrl: "/path/to/your/first-image.jpg",
-    link: "/first-link-path"
-  },
-  {
-    title: "Second Card",
-    description: "This is the description for the second card.",
-    imageUrl: "/path/to/your/second-image.jpg",
-    link: "/second-link-path"
-  },
-  // Add more card objects as needed
-];
+import cardData from '../../data/cardData';
 
 //The page.js file is the default 'page' of it's respective directory. This is the default 'home' page, so it's URL path will be 'example.com/'
 
@@ -89,7 +76,7 @@ export default function Artworks() {
         }}
       ></div>
       
-      <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ position: 'relative', zIndex: 1 }}>
+      <main className="flex min-h-screen flex-col items-center justify-between p-12" style={{ position: 'relative', zIndex: 1 }}>
         <div className='content'>
           <div className='left'>
             <div>
@@ -149,19 +136,24 @@ export default function Artworks() {
          
           </div>
           <div className='right'>
-            Selected Artworks Section
+            {/* Selected Artworks Section */}
             {/* cards here */}
-            <div>
-              {cardData.map((card, index) => (
-                <Cardd
-                  key={index}
-                  title={card.title}
-                  description={card.description}
-                  imageUrl={card.imageUrl}
-                  link={card.link}
-                />
-              ))}
+            <div className={styles.cardsContainer}>
+              <div>
+                {cardData.map((card, index) => (
+                  <Cardd
+                    key={index}
+                    title={card.title}
+                    artistName={card.artistName}
+                    description={card.description}
+                    keywords={card.keywords}
+                    imageUrl={card.imageUrl}
+                    link={card.link}
+                  />
+                ))}
+              </div>
             </div>
+            
      
           </div>
         </div>
