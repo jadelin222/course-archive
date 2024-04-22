@@ -63,12 +63,12 @@ body {
 
 .left,
 .right {
-  width: 50vw;
+  width: 70vw;
   flex: 1 1 50%;
   box-sizing: border-box;
-  padding: 2rem;
+  /* padding: 1rem; */
   /* debug lines, will remove later */
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* Adjust layout for smaller screens */

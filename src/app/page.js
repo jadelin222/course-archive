@@ -284,7 +284,7 @@ const AboutFogRot = () => {
 
           <div className="wordArtContainer" ref={divRef6} >
             
-            <Link href="/workshop" target="_blank" rel="noopener noreferrer">
+            <Link href="/workshop" rel="noopener noreferrer">
               <Image src='/images/words/workshopTxt.png' alt='image' width={835} height={208}>
               </Image>
             </Link>
@@ -292,7 +292,7 @@ const AboutFogRot = () => {
 
           <div className="wordArtContainer" ref={divRef7} >
             
-            <Link href="/Artworks" target="_blank" rel="noopener noreferrer">
+            <Link href="/Artworks" rel="noopener noreferrer">
               <Image src='/images/words/artworksTxt.png' alt='image' width={1354} height={442}>
               </Image>
             </Link>

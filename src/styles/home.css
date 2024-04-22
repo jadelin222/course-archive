@@ -29,10 +29,16 @@
 .txt2{
     /* width: 330px; */
     width: 35vw;
+    background:linear-gradient(to top right, rgba(200,200,255,0.1), rgba(255,255,255,0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) 
 }
 .txt3{
     /* width: 350px; */
     width: 40vw;
+    background:linear-gradient(to top right, rgba(200,200,255,0.1), rgba(255,255,255,0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) 
 }
 .wordArtContainer{
     position: absolute;

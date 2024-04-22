@@ -1,0 +1,11 @@
+
+.container{
+    background-color: aliceblue;
+    color: black;
+    padding: 0 0.4rem;
+}
+.editor-details{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
