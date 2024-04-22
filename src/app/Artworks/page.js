@@ -10,6 +10,7 @@ import React, { useEffect, useRef } from 'react';
 import Cardd from '../../components/cardd';
 import Footer from '../../components/footer';
 import styles from './artworks.module.css';
+import EditorDetails from '../../components/editorDetails';
 
 import cardData from '../../data/cardData';
 
@@ -117,10 +118,21 @@ export default function Artworks() {
             
      
           </div>
+         
+
         </div>
-       
+        <div>
+          <EditorDetails  
+            summary="editor details" 
+            details={<>
+              <p>design by jade, edited by jade</p>
+              {/* <p></p> */}
+            </>} 
+          />
+        </div>   
       
       </main>
+      
       <Footer />
     </>
   );
