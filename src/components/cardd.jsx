@@ -15,7 +15,7 @@ const Cardd = ({ title, artistName, description, keywords, imageUrl, link }) => 
           <p className="card-text">{artistName}</p>
           <p className="card-text">{description}</p>
           <p className="card-text">{keywords}</p>
-          {/* <a href={link} className="card-link">Learn More</a> */}
+          {<a href={'Artworks/' + link} className="card-link">Learn More</a>}
         </div>
       {/* </Link> */}
       

@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import lottie from 'lottie-web';
 import React, { useEffect, useRef } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -148,7 +148,7 @@ export default function Artworks() {
                     description={card.description}
                     keywords={card.keywords}
                     imageUrl={card.imageUrl}
-                    link={card.link}
+                    link={index}
                   />
                 ))}
               </div>

@@ -3,6 +3,10 @@
     width: 100%;
 
 }
+.cardStyle{
+    font-size: x-large;
+    color: aqua;
+}
 @media (max-width: 600px) {
 
 }
