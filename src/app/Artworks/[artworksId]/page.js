@@ -2,20 +2,35 @@
 
 import cardData from '../../../data/cardData';
 import React, { useEffect, useState } from 'react';
-import Cardd from '../../../components/cardd';
+import Footer from '../../../components/footer';
 import styles from '../artworks.module.css';
 
 export default function ArtworkDetails({ params }){
       
 const card = cardData[params.artworksId-1];
     return (
-        <div className={styles.cardStyle}>
-            <h1>art title {params.artworksId}</h1>
-            {<p>{card.title}</p>}
-            {<p>{card.artistName}</p>}
-            {<p>{card.description}</p>}
-            {<p>{card.keywords}</p>}
-        </div>
+        <>
+            <main className={styles.main} style={{ backgroundColor: 'gray' }}>
+                {<div className={styles.imgContainer}>
+                    <img src={card.imageUrl} alt="Card image" />
+                    <img src={card.imageUrl2} alt="Card image" />
+                </div>}
+                <div className={styles.titleArtistContainer}>
+                    <h1 className={styles.title}>{card.title}</h1>
+                    <p>{card.artistName}</p>
+                </div>
+                {<p className={styles.text} style={{ whiteSpace: 'pre-line' }} dangerouslySetInnerHTML={{ __html: card.description }}></p>}
+                {/* {<p>{card.keywords}</p>} */}
+                <div className={styles.socialLinkcontiner}>
+                    <a href={card.socialLink} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText}</a>
+                    <a href={card.socialLink2} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText2}</a>
+                </div>
+            </main>
+                {/* <h1>art title {params.artworksId}</h1> */}        
+        <Footer />
+        </>
+       
+       
         );       
     
 }

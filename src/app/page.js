@@ -9,6 +9,7 @@ import React, { useEffect, useRef } from 'react';
 import {Engine, Render, Bodies, World} from 'matter-js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import EditorDetails from '../components/editorDetails';
 
 
 
@@ -332,7 +333,11 @@ const AboutFogRot = () => {
       
         </div>
       </div>
-
+      <div>
+          <EditorDetails  
+            summary="designed and edited by jade" 
+          />
+        </div>   
     </main>
     
   )

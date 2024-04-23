@@ -1,12 +1,90 @@
+.main{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
 .cardsContainer{
     display: flex;
     width: 100%;
 
 }
+.cardSocialLink{
+    text-decoration: underline;
+    color: blue;
+    display: inline-block; 
+    /* margin-right: 0.5rem; */
+
+}
+.title{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+}
+.title, .text, .cardSocialLink {
+    margin-bottom: 1rem; 
+}
+
+.text {
+    line-height: 1.6;
+    max-width: 80ch; 
+    text-align: justify;
+}
+
+
+
 .cardStyle{
     font-size: x-large;
     color: aqua;
 }
-@media (max-width: 600px) {
 
+.socialLinkcontiner{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.titleArtistContainer{
+    align-self: flex-start; 
+    width: 100%; 
+}
+
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.imgContainer img {
+    flex: 1 1 200px;
+    max-width: 49%;
+    height: auto; 
+    object-fit: cover; 
+}
+@media (max-width: 600px) {
+    
+        .socialLinkcontiner{
+          justify-content: none;
+        }
+        .imgContainer{
+          flex-direction: column;
+          flex: none;
+          height: auto; 
+        }
+        .main{
+            padding: 0.8rem;
+        }
+        .imgContainer img {
+           
+            max-width: 100%;
+          
+        }
+        .text {
+            max-width: 100%;
+        }
+      
 }
