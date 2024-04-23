@@ -16,7 +16,6 @@
     color: blue;
     display: inline-block; 
     /* margin-right: 0.5rem; */
-
 }
 .title{
     font-style: italic;
@@ -76,7 +75,7 @@
           height: auto; 
         }
         .main{
-            padding: 0.8rem;
+            padding: 1rem;
         }
         .imgContainer img {
            

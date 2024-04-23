@@ -335,7 +335,7 @@ const AboutFogRot = () => {
       </div>
       <div>
           <EditorDetails  
-            summary="designed and edited by jade" 
+            summary="designed and edited by jade, background by devon" 
           />
         </div>   
     </main>

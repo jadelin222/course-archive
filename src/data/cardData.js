@@ -20,11 +20,16 @@ const cardData = [
       socialText2:"download game"
     },
     {
-      title: "3 Card",
-      artistName: "name",
-      description: "This is the description for the 3 card.",
+      title: "Internal Tears",
+      artistName: "Xinde Ren",
+      keywords: "Wood, fabric and a speaker, along with a short film screening in G05",
+      description: "1,000 years into the future, human science and technology have achieved countless breakthroughs. A collective consciousness comes to life by residing within the quantum. Entangling itself,  it gives birth to a utopia free of anxiety, separation and any restrictions by physical forms, liberating humanity from the cycles of life. \n  Nonetheless, as the protagonist transits toward the state of everlasting peace, she struggles with the fading of her emotions, no matter whether they were pain or happiness. Memories of the past rush to her mind—from being born in the stream of blood to being diluted in the stream of information. Regrettably, the loss of love breeds frustration. She ponders, is that a gateway to paradise or merely a narcotic to numb her soul?",
       imageUrl: "/path/to/your/second-image.jpg",
-      link: "third-artwork"
+      link: "third-artwork",
+      socialLink:"www.xinderen.art",
+      socialText:"@xxexybabie_xx",
+      socialLink2:"www.xinderen.art",
+      socialText2:"www.xinderen.art"
     },
     {
       title: "4 Card",

@@ -123,7 +123,7 @@ export default function Artworks() {
         </div>
         <div>
           <EditorDetails  
-            summary="designed and edited by jade" 
+            summary="designed and edited by jade, background by jade" 
           />
         </div>   
       
