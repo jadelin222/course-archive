@@ -59,7 +59,7 @@
     height: auto; 
     z-index: 10
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .aboutContainer, .wordArtContainer, .zineContainer, .timeContainer {
       /* width: 90%;
       left: 5%; */

@@ -7,7 +7,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
 
 export const metadata = {
-  title: 'Digital Arts Computing Archive',
+  title: 'Digital Arts Computing - Fog Rot 2024',
   description: 'A repository...',
 }
 

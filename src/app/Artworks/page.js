@@ -96,10 +96,10 @@ export default function Artworks() {
           <div className='right'>
             {/* Selected Artworks Section */}
             {/* cards here */}
-            <div className={styles.cardsContainer}>
-              <div>
+              <div className={styles.cardsContainer}>
                 {cardData.map((card, index) => (
                   <Cardd
+                    className={styles.card}
                     key={index}
                     title={card.title}
                     artistName={card.artistName}
@@ -114,7 +114,6 @@ export default function Artworks() {
                   />
                 ))}
               </div>
-            </div>
             
      
           </div>

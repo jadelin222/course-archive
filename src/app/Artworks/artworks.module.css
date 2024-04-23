@@ -7,9 +7,9 @@
     padding: 5rem;
 }
 .cardsContainer{
-    display: flex;
-    width: 100%;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr)); /* Creates columns that are at least 250px wide */
+    gap: 20px;
 }
 .cardSocialLink{
     text-decoration: underline;
@@ -59,12 +59,12 @@
 }
 
 .imgContainer img {
-    flex: 1 1 200px;
+    flex: 1 1 calc(50%-1rem);
     max-width: 49%;
     height: auto; 
     object-fit: cover; 
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     
         .socialLinkcontiner{
           justify-content: none;
@@ -81,6 +81,9 @@
            
             max-width: 100%;
           
+        }
+        .cardsContainer{
+            grid-template-columns: 1fr;
         }
         .text {
             max-width: 100%;
