@@ -4,17 +4,18 @@ import cardData from '../../../data/cardData';
 import React, { useEffect, useState } from 'react';
 import Footer from '../../../components/footer';
 import styles from '../artworks.module.css';
+import ImageSlider from '../../../components/ImageSlider';
 
 export default function ArtworkDetails({ params }){
       
 const card = cardData[params.artworksId-1];
     return (
         <>
-            <main className={styles.main} style={{ backgroundColor: 'gray' }}>
-                {<div className={styles.imgContainer}>
-                    <img src={card.imageUrl} alt="Card image" />
-                    <img src={card.imageUrl2} alt="Card image" />
-                </div>}
+            <main className={styles.main} style={{ backgroundColor: '#a3b5b4' }}>
+                <div className={styles.imgContainer}>
+                     <ImageSlider images={card.images} />
+                    
+                </div>
                 <div className={styles.titleArtistContainer}>
                     <h1 className={styles.title}>{card.title}</h1>
                     <p>{card.artistName}</p>

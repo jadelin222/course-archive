@@ -5,12 +5,14 @@ import Link from "next/link";
 import React from 'react';
 import './cardd.css';
 
-const Cardd = ({ title, artistName, description, keywords, imageUrl, link, socialLink, socialText, socialLink2, socialText2 }) => {
+const Cardd = ({ title, artistName, description, keywords, images, link, socialLink, socialText, socialLink2, socialText2 }) => {
   return (
     <div className="card">
       <Link href={`/Artworks/${encodeURIComponent(link)}`} className="card-link" rel="noopener noreferrer">
         <div className="imgContainer">
-          <img src={imageUrl} alt="Card image" />
+          {images && images.length > 0 && (
+            <img src={images[0]} alt="Card image" />
+          )}
         </div>
         
         <div className="card-body">

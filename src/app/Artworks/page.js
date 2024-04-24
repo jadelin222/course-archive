@@ -105,7 +105,7 @@ export default function Artworks() {
                     artistName={card.artistName}
                     description={card.description}
                     keywords={card.keywords}
-                    imageUrl={card.imageUrl}
+                    images={card.images}
                     link={index+1}
                     socialLink={card.socialLink}
                     socialText={card.socialText}
