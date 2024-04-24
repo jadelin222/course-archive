@@ -1,0 +1,21 @@
+.title {
+  font-weight: bold;
+  font-size: 58px;
+}
+.guestName {
+  width: 100%;
+  /* text-align: center; */
+  font-size: 44px;
+  font-weight: 500;
+}
+.guestCard {
+  margin: 60px 0;
+}
+.guestImg {
+  object-fit: cover;
+}
+.sideBar {
+  margin-top: 60px;
+}
+@media (max-width: 600px) {
+}
