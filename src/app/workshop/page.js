@@ -10,11 +10,12 @@ export default function Workshop() {
   return (
     <>
 
-      <main className="flex min-h-screen flex-col items-center justify-between p-10">
-        <div>
-          <div className={styles.workshopInfo}>
+      {/* <main className="flex min-h-screen flex-col items-center justify-between p-10"> */}
+      <main className={styles.mainContainer} style={{ backgroundColor: 'LightSlateGray' }}>
+        <div className={styles.workshopInfo}>
+          <div className={styles.workshopMaintxt}>
             <h1 className={styles.title}>
-            Fog Rot: Chrono-Cartography Workshop:
+            Fog Rot: Chrono-Cartography Workshop
             </h1>
             <Image className={styles.workshopImg} src='/images/workshop1.jpg' alt="workshop image" width={864} height={576} ></Image>
             <p>Why do we imagine what we say we imagine? As part of the &apos;Fog Rot&apos; public programme, we will be hosting a &apos;chrono-cartography&apos; workshop exploring themes of forgetting, remembering, ambiguity, and futurity, through a collective imagination activity. Inspired by indie roleplaying games and techniques, the workshop will use group drawing and worldbuilding of abstract timelines to reflect on what emerges when we try to conceptualise the future.
@@ -26,12 +27,14 @@ export default function Workshop() {
             
           </div>
           <div className={styles.guestInfoContainer}>
-            <h2>
+            <h2 className={styles.smalltitle}>
               Guests
             </h2>
             <div className={styles.guestCard}>
+            <div className={styles.guestCardImageContainer}>
               <Image className={styles.guestImg} src='/images/Jamie Sutcliffe/jamiesutcliffe.jpg' alt='image' width={500} height={600} ></Image>
-              <div>
+            </div>
+              <div className={styles.cardContent}>
                 <h3 className={styles.guestName}>Jamie Sutcliffe</h3>
                 <p className={styles.guestBio}>Jamie Sutcliffe is a writer, curator, and co-director of Strange Attractor Press. His work explores artistic encounters with science fictive fabulation, the politics of video games, animation and its entanglements with developments in the life sciences, and the persistence of myth in digital contexts. 
                   He is the editor of the books Documents of Contemporary Art: Magic, published by The Whitechapel Gallery and The MIT Press (2021), and Weeb Theory (2023) published by Banner Repeater, and his essays, reviews, and interviews have been published internationally by Art Monthly, Art Review, e-flux Criticism, Frieze, The White Review, Rhizome, The Quietus, and Bricks From The Kiln amongst others. He has delivered talks, chaired symposia, and hosted interviews with artists at many institutions including Tate Britain, Whitechapel Gallery, The V&A, Wysing Art Centre, Jerwood Space, Somerset House, Sadie Coles HQ, Camden Art Centre, The Photographer&apos;s Gallery, and Focal Point.
@@ -39,36 +42,43 @@ export default function Workshop() {
                 <Link className={styles.guestLink} href='https://strangeattractor.co.uk/' target="_blank" rel="noopener noreferrer">
                   {/* <Image src='/images/Jamie Sutcliffe/strangeattractorpress.jpg' alt='image'></Image> */}
                   Webiste
-                  <FontAwesomeIcon icon={faLink} />
+                  <FontAwesomeIcon className={styles.faIcon} icon={faLink} />
                 </Link>
               </div>
             </div>
 
             <div className={styles.guestCard}>
+            <div className={styles.guestCardImageContainer}>
               <Image className={styles.guestImg} src='/images/KittyClark/kitty4.jpeg' alt='image' width={1024} height={683} ></Image>
-              <div>
+             </div> 
+              <div className={styles.cardContent}>
                 <h3 className={styles.guestName}>Kitty Clark</h3>
-                <p className={styles.guestBio}>Kitty Clark graduated from the Slade School of Fine Art 2011, and lives and works in Hastings and London. 
+                <div>
+                  <p className={styles.guestBio}>Kitty Clark graduated from the Slade School of Fine Art 2011, and lives and works in Hastings and London. 
 
 
-                  Clark&apos;s practice moves between sculpture and digital media, with many of the works using atypical narrative structures to explore speculative, and frequently dystopian, futures. Themes of escapism and desire, fantasy, science fiction and the esoteric are drawn upon, portrayed with an aesthetic of crooked cartoonish minimalism. Frequently her work utilises devices and structures found in gaming, from choose-your-own-adventure books to text based RPGs. 
+                    Clark&apos;s practice moves between sculpture and digital media, with many of the works using atypical narrative structures to explore speculative, and frequently dystopian, futures. Themes of escapism and desire, fantasy, science fiction and the esoteric are drawn upon, portrayed with an aesthetic of crooked cartoonish minimalism. Frequently her work utilises devices and structures found in gaming, from choose-your-own-adventure books to text based RPGs. 
 
 
-                  Select recent exhibitions and commissions include: A Haunting, Dinner Party Gallery, London, (2022), Trouble in Outer Heaven, Southwark Park Galleries, London (2021), Ghosts and Apparitions, Sheffield Doc/Fest, 2020, BBC New Creatives with the ICA, London (2019), Solo Presentations, Jerwood Arts, London (2019), Spiders Web is a Stage for A Play, Fungus Press Commission, Turf Projects, London (2018).
+                    Select recent exhibitions and commissions include: A Haunting, Dinner Party Gallery, London, (2022), Trouble in Outer Heaven, Southwark Park Galleries, London (2021), Ghosts and Apparitions, Sheffield Doc/Fest, 2020, BBC New Creatives with the ICA, London (2019), Solo Presentations, Jerwood Arts, London (2019), Spiders Web is a Stage for A Play, Fungus Press Commission, Turf Projects, London (2018).
 
-                </p>
-                <Link className={styles.guestLink} href='https://kitty-clark.com/' target="_blank" rel="noopener noreferrer">
-                  Webiste
-                  <FontAwesomeIcon icon={faLink} />
-                </Link>
+                    </p>
+                    <Link className={styles.guestLink} href='https://kitty-clark.com/' target="_blank" rel="noopener noreferrer">
+                    Webiste
+                    <FontAwesomeIcon className={styles.faIcon} icon={faLink} />
+                    </Link>
+                </div>
+                
                 
                 
               </div>
             </div>
 
             <div className={styles.guestCard}>
+            <div className={styles.guestCardImageContainer}>
               <Image className={styles.guestImg} src='/images/Johanna De Verdier/3.jpg' alt='image' width={1080} height={1350} ></Image>
-              <div>
+            </div>
+              <div className={styles.cardContent}>
                 <h3 className={styles.guestName}>Johanna De Verdier</h3>
                 <p className={styles.guestBio}>Johanna de Verdier is an artist working primarily across sculpture, installation and performance often along with computational, sensory components. By looking into the possibilities of self-sufficient ways of living she explores the consequences of extractive industries and what the resurgence of local and rural knowledge might look like in a world that has already gone through climate collapse. 
 
@@ -77,7 +87,7 @@ export default function Workshop() {
                 </p>
                 <Link className={styles.guestLink} href='https://johannadeverdier.com/' target="_blank" rel="noopener noreferrer">
                   Webiste
-                  <FontAwesomeIcon icon={faLink} />
+                  <FontAwesomeIcon className={styles.faIcon} icon={faLink} />
                 </Link>
                 
               </div>
@@ -88,12 +98,9 @@ export default function Workshop() {
           
         </div>
         <div className={styles.sideBar}>
-          <p>Location: GO5, St James Hatcham Church, Goldsmiths
-
-            Time: 2-4pm, Saturday 27th April 
-
-          </p>
-          <Link href='https://www.eventbrite.co.uk/e/fog-rot-chrono-cartography-workshop-tickets-885496232067' target="_blank" rel="noopener noreferrer">Event Link</Link>
+          <p>Location: GO5, St James Hatcham Church, Goldsmiths</p>
+          <p>Time: 2-4pm, Saturday 27th April</p>  
+          <Link className={styles.guestLink} href='https://www.eventbrite.co.uk/e/fog-rot-chrono-cartography-workshop-tickets-885496232067' target="_blank" rel="noopener noreferrer">Event Link</Link>
           <p>*please note that the workshop will run for two hours and participants are expected to stay for its entire duration*
           </p>
 
