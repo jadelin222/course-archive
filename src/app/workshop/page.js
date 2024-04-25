@@ -18,7 +18,7 @@ export default function Workshop() {
             Fog Rot: Chrono-Cartography Workshop
             </h1>
             <Image className={styles.workshopImg} src='/images/workshop1.jpg' alt="workshop image" width={864} height={576} ></Image>
-            <p>Why do we imagine what we say we imagine? As part of the &apos;Fog Rot&apos; public programme, we will be hosting a &apos;chrono-cartography&apos; workshop exploring themes of forgetting, remembering, ambiguity, and futurity, through a collective imagination activity. Inspired by indie roleplaying games and techniques, the workshop will use group drawing and worldbuilding of abstract timelines to reflect on what emerges when we try to conceptualise the future.
+            <p className={styles.workshopDes}>Why do we imagine what we say we imagine? As part of the &apos;Fog Rot&apos; public programme, we will be hosting a &apos;chrono-cartography&apos; workshop exploring themes of forgetting, remembering, ambiguity, and futurity, through a collective imagination activity. Inspired by indie roleplaying games and techniques, the workshop will use group drawing and worldbuilding of abstract timelines to reflect on what emerges when we try to conceptualise the future.
 
               We will use drawing to additively build up an abstract grid of related temporalities that conceptualise a past, present and future derived from the realities of our own, to collective reflect on our imaginative tendencies to address what is at stake.
 
@@ -48,9 +48,9 @@ export default function Workshop() {
             </div>
 
             <div className={styles.guestCard}>
-            <div className={styles.guestCardImageContainer}>
+              <div className={styles.guestCardImageContainer}>
               <Image className={styles.guestImg} src='/images/KittyClark/kitty4.jpeg' alt='image' width={1024} height={683} ></Image>
-             </div> 
+              </div> 
               <div className={styles.cardContent}>
                 <h3 className={styles.guestName}>Kitty Clark</h3>
                 <div>
