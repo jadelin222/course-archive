@@ -13,7 +13,6 @@
   padding-bottom: 2rem;
 }
 .mainContainer {
-  /* background-color: '#a3b5b4'; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;

@@ -37,7 +37,7 @@ export default function Artworks() {
 
       const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        const scrollMax = document.documentElement.scrollHeight - window.innerHeight+3;
+        const scrollMax = document.documentElement.scrollHeight - window.innerHeight+4;
         // const scrollMax = document.documentElement.scrollHeight;
         
         // Calculate the current frame of the lottie animation

@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr)); /* Creates columns that are at least 250px wide */
     gap: 20px;
+    padding: 5rem 0;
 }
 .cardSocialLink{
     text-decoration: underline;
@@ -89,6 +90,10 @@
         }
         .text {
             max-width: 100%;
+        }
+        .cardsContainer{
+          
+            padding: 3rem 0;
         }
       
 }
