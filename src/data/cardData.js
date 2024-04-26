@@ -43,7 +43,7 @@ const cardData = [
       artistName: "Xinde Ren",
       keywords: "",
       description: "1,000 years into the future, human science and technology have achieved countless breakthroughs. A collective consciousness comes to life by residing within the quantum. Entangling itself,  it gives birth to a utopia free of anxiety, separation and any restrictions by physical forms, liberating humanity from the cycles of life. \n  Nonetheless, as the protagonist transits toward the state of everlasting peace, she struggles with the fading of her emotions, no matter whether they were pain or happiness. Memories of the past rush to her mind—from being born in the stream of blood to being diluted in the stream of information. Regrettably, the loss of love breeds frustration. She ponders, is that a gateway to paradise or merely a narcotic to numb her soul?",
-      images: [ "/images/Artworks/xinde-images/XindeWork1.gif", "/images/Artworks/xinde-images/XindeWork2.gif", "/images/Artworks/xinde-images/XindeWork3.gif"],
+      images: [ "/images/Artworks/xinde-images/XindeWork1.gif", "/images/Artworks/xinde-images/XindeWork2.gif", "/images/Artworks/xinde-images/XindeWork3.gif", "/images/Artworks/xinde-images/image1.jpg", "/images/Artworks/xinde-images/image2.jpg", "/images/Artworks/xinde-images/image3.jpg"],
       link: "internal-tears",
       socialLink:"https://www.instagram.com/xxexybabie_xx?igsh=OWVpeXJhajljMXVi",
       socialText:"@xxexybabie_xx",
@@ -128,6 +128,37 @@ const cardData = [
       socialLink:"https://www.instagram.com/bjh1196?igsh=dnV0cm9waWs4bjJ4",
       socialText:"@bjh1196"
     },
+    {
+      title: "White Void",
+      artistName: "Henry Neng", 
+      keywords: "", 
+      description: "A game where you play a girl with no memories, lost in an white empty world. Navigate the protagonist “Stille” through the void and help her find her memories.", 
+      images: ["/images/Artworks/henry-images/image1.png", "/images/Artworks/henry-images/image2.png", "/images/Artworks/henry-images/image3.png", "/images/Artworks/henry-images/image4.png", "/images/Artworks/henry-images/image5.png", "/images/Artworks/henry-images/image6.png", "/images/Artworks/henry-images/image7.png"], 
+      link: "white-void"
+    },    
+    {
+      title: "Orcas Realm",
+      artistName: "Mehak Qureshi", 
+      keywords: "", 
+      description: "This piece, born from a fusion of technology, coding, digital drawing, and sculpture-making, tells stories of captive orcas, shedding light on the broader impact of captivity. The projections shown depict the abstract and stark differences between an orca living freely in the ocean and one trapped in an aquarium. Light is used as a main medium to create an experience that evokes the discomfort experienced by captive orcas. These light projections intertwine with a physical sculpture that mimics the fluid, dynamic forms of orcas in motion, contrasting sharply with the rigid enclosures that represent their confinement. This juxtaposition is not only visual but also thematic, highlighting the unnatural conditions and the palpable tension between freedom and captivity.",
+      images: ["/images/Artworks/mehak-images/image.png"],
+      link: "orcas-realm", 
+      socialLink: "", 
+      socialText: ""
+    },       
+    //TO ADD A NEW FIELD, COPY THIS TEMPLATE:      
+    /*
+    {
+      title: "",
+      artistName: "", 
+      keywords: "", 
+      description: "",
+      images: [""],
+      link: "", 
+      socialLink: "", 
+      socialText: ""
+    },       
+    */
   ];
 
   export default cardData;
