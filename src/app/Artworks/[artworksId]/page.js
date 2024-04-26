@@ -8,13 +8,10 @@ import ImageSlider from '../../../components/ImageSlider';
 import Link from 'next/link';
 
 export default function ArtworkDetails({ params }){
-      
 
-// const card = cardData.filter((cardData) => params.artworksId);
-// console.log("id is: " + params.artworksId);
-var index = cardData.findIndex(obj => obj.link==params.artworksId);
-console.log(index);
-const card = cardData[index];
+var cardIndex = cardData.findIndex(obj => obj.link==params.artworksId);
+// console.log(cardIndex);
+const card = cardData[cardIndex];
 
     return (
         <>
