@@ -5,10 +5,17 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../../../components/footer';
 import styles from '../artworks.module.css';
 import ImageSlider from '../../../components/ImageSlider';
+import Link from 'next/link';
 
 export default function ArtworkDetails({ params }){
       
-const card = cardData[params.artworksId-1];
+
+// const card = cardData.filter((cardData) => params.artworksId);
+// console.log("id is: " + params.artworksId);
+var index = cardData.findIndex(obj => obj.link==params.artworksId);
+console.log(index);
+const card = cardData[index];
+
     return (
         <>
             <main className={styles.main} style={{ backgroundColor: '#a3b5b4' }}>
@@ -26,6 +33,10 @@ const card = cardData[params.artworksId-1];
                     <a href={card.socialLink} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText}</a>
                     <a href={card.socialLink2} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText2}</a>
                 </div>
+                <div>
+                <Link href={"/Artworks"} style={{color: 'blue', borderBottom: '20px'}}>← Back to the gallery</Link>
+                </div>
+            
             </main>
                 {/* <h1>art title {params.artworksId}</h1> */}        
         <Footer />
