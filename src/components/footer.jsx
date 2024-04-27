@@ -66,7 +66,7 @@ export default function Footer() {
         
         <br></br>
         <FontAwesomeIcon style={{ 'paddingRight': '6px' }} icon={faBookOpen} />
-        <Link href="https://www.instagram.com/digital_arts_computing/?hl=en" target="_blank" rel="noopener noreferrer">
+        <Link href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer">
           Check out our zine
         </Link>
       </div>
