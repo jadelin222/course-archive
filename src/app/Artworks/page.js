@@ -67,13 +67,12 @@ export default function Artworks() {
       <div 
         ref={animationContainer} 
         style={{
-          position: 'fixed', // Use 'absolute' if you don't want it to stay fixed during scroll
+          position: 'fixed', 
           top: 0,
           left: 0,
           width: '100vw',
-          // height: '100vh', //
           height:'100%',
-          zIndex: -1, // Ensure it stays behind other content
+          zIndex: -1, 
         }}
       ></div>
       
@@ -123,7 +122,7 @@ export default function Artworks() {
         </div>
         <div>
           <EditorDetails  
-            summary="designed and edited by jade, background by jade" 
+            summary="designed and edited by jade & david, background by jade" 
           />
         </div>   
       

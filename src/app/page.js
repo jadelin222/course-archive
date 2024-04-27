@@ -243,6 +243,8 @@ const AboutFogRot = () => {
   };
 
   return (
+    <>
+   
     <main className="mainContainer flex min-h-screen flex-col items-center justify-between p-0">
       <div
             onMouseDown={handleDown}
@@ -333,12 +335,14 @@ const AboutFogRot = () => {
       
         </div>
       </div>
-      <div>
-          <EditorDetails  
-            summary="designed and edited by jade, background by devon" 
-          />
-        </div>   
+      
     </main>
+     <div>
+     <EditorDetails  
+       summary="designed and edited by jade, background by devon" 
+     />
+   </div>  
+   </>
     
   )
   
