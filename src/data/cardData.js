@@ -146,6 +146,16 @@ const cardData = [
       socialLink: "", 
       socialText: ""
     },       
+    {
+      title: "Curse these metal hands",
+      artistName: "guro soup", 
+      keywords: "", 
+      description: "guro soup lives in Silent Hill and the location is really nice but he can’t see anything because there's too much fog.",
+      images: ["/images/Artworks/gurosoup-images/2024-04-25 15.34.42.jpg"],
+      link: "curse-these-metal-hands", 
+      socialLink: "", 
+      socialText: ""
+    },       
     //TO ADD A NEW FIELD, COPY THIS TEMPLATE:      
     /*
     {
