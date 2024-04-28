@@ -26,8 +26,8 @@ const card = cardData[cardIndex];
                 {<p className={styles.text} style={{ whiteSpace: 'pre-line'}} dangerouslySetInnerHTML={{ __html: card.description }}></p>}
                 {/* {<p>{card.keywords}</p>} */}
                 <div className={styles.socialLinkcontiner}>
-                    <Link href={card.socialLink} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText}</Link>
-                    <Link href={card.socialLink2} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText2}</Link>
+                    <a href={card.socialLink} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText}</a>
+                    <a href={card.socialLink2} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText2}</a>
                 </div>
                 <div style={{color: 'blue', borderBottom: '20px', background: 'white', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2px', borderRadius: '1px'}}>
                 ← <Link href={"/Artworks"}>back to the gallery</Link>
