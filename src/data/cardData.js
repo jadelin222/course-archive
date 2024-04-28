@@ -155,7 +155,17 @@ const cardData = [
       link: "curse-these-metal-hands", 
       socialLink: "", 
       socialText: ""
-    },       
+    }, 
+    {
+      title: "Detecting system – Recurring Landscape",
+      artistName: "Han(Moni) Wang", 
+      keywords: "", 
+      description: "The project Detecting System is designed to build up a networked eco-environment /n by using his self-made fabric, and programming each piece of fabric to act as a /n monitor so that the view of the real world outside is reflected on the surface of the /n fabric，to respond and reconstruct a reminiscence of the lost landscape, providing /n a shared engagement and refined balance between human being’s behavior and /n nature.",
+      images: ["/images/Artworks/Moni-images/Moni_1.png","/images/Artworks/Moni-images/Moni_2.png"],
+      link: "Recurring-Landscape", 
+      socialLink: "", 
+      socialText: ""
+    },         
     //TO ADD A NEW FIELD, COPY THIS TEMPLATE:      
     /*
     {
