@@ -14,7 +14,6 @@
 }
 .cardSocialLink{
     text-decoration: underline;
-    color: blue;
     display: inline-block; 
     /* margin-right: 0.5rem; */
 }
@@ -33,22 +32,24 @@
     text-align: justify;
 }
 
-
-
-.cardStyle{
-    font-size: x-large;
-    color: aqua;
+.text a {
+    color: blue;
 }
 
-.socialLinkcontiner{
+.socialLinkcontiner {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
+.socialLinkcontiner a {
+    text-decoration-line: none;
+}
+
 .titleArtistContainer{
     align-self: flex-start; 
     width: 100%; 
+    
 }
 
 .imgContainer {
@@ -59,6 +60,17 @@
     justify-content: center;
     gap: 0.8rem;
     margin-bottom: 1.5rem;
+    color: blue;
+}
+
+.imgContainer button {
+    /* text-shadow: white 1px 0 10px; */
+    background: rgba(255,255,255,1);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    text-decoration-line: none;
+    border-radius: 1px;
 }
 
 .imgContainer img {

@@ -17,21 +17,20 @@ const card = cardData[cardIndex];
         <>
             <main className={styles.main} style={{ backgroundColor: '#a3b5b4' }}>
                 <div className={styles.imgContainer}>
-                     <ImageSlider images={card.images} />
-                    
+                     <ImageSlider images={card.images} /> 
                 </div>
                 <div className={styles.titleArtistContainer}>
                     <h1 className={styles.title}>{card.title}</h1>
                     <p>{card.artistName}</p>
                 </div>
-                {<p className={styles.text} style={{ whiteSpace: 'pre-line' }} dangerouslySetInnerHTML={{ __html: card.description }}></p>}
+                {<p className={styles.text} style={{ whiteSpace: 'pre-line'}} dangerouslySetInnerHTML={{ __html: card.description }}></p>}
                 {/* {<p>{card.keywords}</p>} */}
                 <div className={styles.socialLinkcontiner}>
-                    <a href={card.socialLink} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText}</a>
-                    <a href={card.socialLink2} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText2}</a>
+                    <Link href={card.socialLink} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText}</Link>
+                    <Link href={card.socialLink2} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText2}</Link>
                 </div>
-                <div>
-                <Link href={"/Artworks"} style={{color: 'blue', borderBottom: '20px'}}>← Back to the gallery</Link>
+                <div style={{color: 'blue', borderBottom: '20px', background: 'white', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2px', borderRadius: '1px'}}>
+                ← <Link href={"/Artworks"}>back to the gallery</Link>
                 </div>
             
             </main>
