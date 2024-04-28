@@ -33,7 +33,7 @@
 }
 
 .text a {
-    color: blue;
+    color: rgb(14, 86, 98);
 }
 
 .socialLinkcontiner {
@@ -63,7 +63,7 @@
     justify-content: center;
     gap: 0.8rem;
     margin-bottom: 1.5rem;
-    color: blue;
+    color: rgb(14, 86, 98);
 }
 
 .imgContainer button {
@@ -82,6 +82,17 @@
    /* height: 40vh; */
    object-fit: cover;
 }
+
+.backToGallery {
+    color: rgb(14, 86, 98);
+    border-bottom: 20px;
+    background: white;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-top: 2px;
+    border-radius: 1px;
+}
+
 @media (max-width: 768px) {
     
         .socialLinkcontiner{

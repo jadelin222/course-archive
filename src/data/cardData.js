@@ -18,7 +18,7 @@ const cardData = [
       title: "Eulogy via motherboard (2024)",
       artistName: "Devon Kennedy",
       keywords: "",
-      description: "Inspired by the lifecycle of habits, this piece exists as a memoir to both the forgotten object and my own habit of sentimental collecting.\n Utilising a combination of textiles, 3D modelling and digital archiving, I invite the viewer to witness my digital renditions of items I have collected over the years.\n Encompassed by pocket shrines (traditional forms of commemoration) I hope through the construction of this piece to gain closure from my habit and therefore lay it to rest.",
+      description: "Inspired by the lifecycle of habits, this piece exists as a memoir to both the forgotten object and my own habit of sentimental collecting.\n \n Utilising a combination of textiles, 3D modelling and digital archiving, I invite the viewer to witness my digital renditions of items I have collected over the years.\n \n Encompassed by pocket shrines (traditional forms of commemoration) I hope through the construction of this piece to gain closure from my habit and therefore lay it to rest.",
       images: ["/images/Artworks/DevonKennedy-images/frame0000.png","/images/Artworks/DevonKennedy-images/img1.png", "/images/Artworks/DevonKennedy-images/me_fullShrine.png"],
       link: "eulogy",
       socialText: "",

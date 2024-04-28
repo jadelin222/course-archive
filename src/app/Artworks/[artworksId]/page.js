@@ -29,7 +29,7 @@ const card = cardData[cardIndex];
                     <a href={card.socialLink} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText}</a>
                     <a href={card.socialLink2} className={styles.cardSocialLink} target="_blank" rel="noopener noreferrer">{card.socialText2}</a>
                 </div>
-                <div style={{color: 'blue', borderBottom: '20px', background: 'white', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2px', borderRadius: '1px'}}>
+                <div className={styles.backToGallery}>
                 ← <Link href={"/Artworks"}>back to the gallery</Link>
                 </div>
             
