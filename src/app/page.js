@@ -13,15 +13,15 @@ const slides = [
   {
     image: '/images/HomePageImages/FogRot2024/IMG_8606.JPG',
     title: 'Fog Rot',
-    secondaryTitle: '2024',
+    secondaryTitle: '2024 Degree Show',
     buttons: [
       { text: 'Visit Page', link: '/FogRot2024' },
     ]
   },
   {
-    image: '/images/HomePageImages/DamnedSoggy2023/dac_2023_damnedsoggyoatpatch_.JPG',
+    image: '/images/HomePageImages/DamnedSoggy2023/dac_2023_damnedsoggyoatpatch.JPG',
     title: 'Damned Soggy Oat Patch',
-    secondaryTitle: '2023',
+    secondaryTitle: '2023 Degree Show',
     buttons: [
       { text: 'Visit Page', link: 'https://damnedsoggyoatpatch.com/' },
       { text: 'Read More on Clot', link: 'https://clotmag.com/oped/art-to-break-the-stakes-of-pervasive-digital-smoothness ' }
@@ -30,10 +30,10 @@ const slides = [
   {
     image: '/images/HomePageImages/Ep2022/dac_2022_ephermerence.png',
     title: 'EPHEMERENCE',
-    secondaryTitle: '2022',
+    secondaryTitle: '2022 Degree Show',
     buttons: [
       { text: 'Visit Page', link: 'https://ephemerence.goldcomparts.show/' },
-      { text: 'Read about EPHEMERENCE on Clot', link: 'https://clotmag.com/news/exhibition-ephemerence-by-goldsmiths-digital-arts-computing' }
+      { text: 'Read More on Clot', link: 'https://clotmag.com/news/exhibition-ephemerence-by-goldsmiths-digital-arts-computing' }
     ]
   },
   {
@@ -66,15 +66,15 @@ const slides = [
   {
     image: '/images/HomePageImages/2019/dac_2019_cancelmenot.png',
     title: 'Cancel Me Not',
-    secondaryTitle: '2019',
+    secondaryTitle: '2019 Degree Show',
     buttons: [
       { text: 'Watch Trailer', link: 'https://www.youtube.com/watch?v=4VwsUvqVfqU' },
     ]
   },
   {
     image: '/images/HomePageImages/2018/dac_2018_jinia tasnin.jpg',
-    title: 'Digital Arts Computing Degree Show',
-    secondaryTitle: '2018',
+    title: 'DAC Degree Show',
+    secondaryTitle: '2018 Degree Show',
     buttons: [
       { text: 'Watch Trailer', link: 'https://www.youtube.com/watch?v=mwvWKQxMBSk' },
     ]

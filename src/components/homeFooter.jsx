@@ -46,7 +46,7 @@ export default function HomeFooter() {
         {/* Display your name and the current year */}
         <hr style={{ padding: '10px' }}></hr>
         <p className="footer-note">Digital Arts Computing form Goldsmiths, University of London</p>
-        <p className="footer-note">Website designed and developed by jade lin @strawberrycongee</p>
+        <p className="footer-note">Website designed and developed by jade lin <a className="underline" href="https://strawberrycongee.itch.io/" target="_blank" rel="noopener noreferrer">@strawberrycongee</a></p>
         {/* <p>
           Goldsmiths Digital Arts Computing &copy; {new Date().getFullYear()}
         </p> */}

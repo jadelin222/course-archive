@@ -47,14 +47,15 @@ h3{
     backdrop-filter: blur(10px);
   }
 }
+.underline{
+  text-decoration: underline;
+}
 .visit-page-button {
   display: inline-block;
   font-size: 20px;
   padding-right: 1rem;
   text-align: center;
-  border-radius: 5px;
   text-decoration: underline;
-  /* text-decoration: none;  */
   cursor: pointer; /* Makes it appear clickable */
 }
 .left-arrow, .right-arrow {
