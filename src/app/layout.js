@@ -7,7 +7,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
 
 export const metadata = {
-  title: 'Digital Arts Computing - Fog Rot 2024',
+  title: 'Digital Arts Computing',
   description: 'A repository...',
 }
 
@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <body>
-          <div>
+          {/* <div>
             <NavBar/>
-          </div>
+          </div> */}
          {children}
          {/* Include the Footer component */}
        

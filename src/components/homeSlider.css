@@ -1,0 +1,109 @@
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+   /* transform: scale(1.08); */
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  object-position: center center; 
+  object-fit: cover; 
+ 
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  /* transform: scale(1); */
+}
+
+.info {
+  display: block;
+  font-family: 'Arial', sans-serif;
+  position: absolute; /* Positioned relative to the nearest positioned ancestor */
+  bottom: 1rem; /* At the bottom of the .slider */
+  left: 1rem; /* At the left of the .slider */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1.5rem;
+  font-size: xx-large;
+}
+h2{
+  font-weight: bold;
+  font-style: italic;
+}
+h3{
+  font-weight: 300;
+  font-size: 22px;
+}
+@supports (backdrop-filter: blur(10px)) {
+  .info {
+    backdrop-filter: blur(10px);
+  }
+}
+.visit-page-button {
+  display: inline-block;
+  font-size: 20px;
+  padding-right: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: underline;
+  /* text-decoration: none;  */
+  cursor: pointer; /* Makes it appear clickable */
+}
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow {
+  left: 1rem;
+}
+.right-arrow {
+  right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .left-arrow, .right-arrow{
+    font-size: 24px;
+  }
+  .left-arrow {
+    left: 0.5rem;
+  }
+  .right-arrow {
+    right: 0.5rem;
+  }
+  .info{
+    width:100vw;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+  }
+  img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+    object-position: center;
+
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .visit-page-button{
+    font-size: 18px;
+  }
+}

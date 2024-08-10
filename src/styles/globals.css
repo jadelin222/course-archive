@@ -21,7 +21,7 @@ header {
   /* font-family: 'Arial', sans-serif; */
   /* font-family: 'Courier New', Courier, 'Lucida Sans Typewriter',
     'Lucida Typewriter', monospace; */
-    font-family: 'Garamond';
+  font-family: 'Garamond';
   font-weight: 500;
 }
 body {
@@ -51,6 +51,7 @@ body {
   width: 100vw;
   z-index: 1000;
   align-items: center;
+  justify-content: space-between;
 }
 .nav-icon {
   width: 50px; /* Adjust the width as needed */
