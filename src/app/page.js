@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import React from 'react';
 import NavBarHome from '../components/navBarHome';
-import HomeSlider from '../components/HomeSlider';
+import HomeSlider from '../components/homeSlider';
 import HomeFooter from '../components/homeFooter';
 import Link from 'next/link';
 import '../styles/home.css';
