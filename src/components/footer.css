@@ -28,6 +28,9 @@ hr {
 /* Adjustments for smaller screens */
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
   .footer-flex-item {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
+  }
+  footer {
+    padding: 1rem;
   }
 }
