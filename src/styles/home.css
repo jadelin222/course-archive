@@ -1,0 +1,17 @@
+header {
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+  }
+  .nav-icon {
+    color: white; /* Ensures the icon color is white */
+    font-size: 42px; /* Default font size for larger screens */
+    width: 42px;
+  }
+  
+  /* Media query for screens smaller than or equal to 768px wide */
+  @media (max-width: 768px) {
+    .nav-icon {
+      font-size: 24px; /* Smaller font size for mobile devices */
+      width: 24px;
+    }
+  }

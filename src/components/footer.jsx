@@ -6,6 +6,7 @@ import Image from 'next/image';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {faBookOpen} from '@fortawesome/free-solid-svg-icons';
 // import { FaGithub, FaTwitter } from 'react-icons/fa';
 
 // Define the Footer component
@@ -32,18 +33,21 @@ export default function Footer() {
           </div>
           <div className="footer-flex-item">
             <h3>Getting Here</h3>
-            <a href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view">
-              St. James Hatcham Building (AKA The Church)
+            <Link href="https://www.gold.ac.uk/campus-map/st-james-hatcham-building/#map-view" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/StjamesHatchamresized.jpg"
                 width={150}
                 height={80}
                 alt="Picture of the St. James Hatcham Building"
+                style={{ marginBottom: '0.4rem' }}
               />
-            </a>
+               <h5 style={{ fontWeight:'bold', marginBottom: '0.6rem'}}>St. James Hatcham Building (AKA The Church)</h5>
+            </Link>
             <p>- Turn off New Cross road and walk up St James</p>
             <p style={{ paddingBottom: '12px' }}>- The St James Hatcham Building is at the end of the road</p>
           </div>
+
+          
         </div>
 
         {/* Display your name and the current year */}
@@ -55,14 +59,16 @@ export default function Footer() {
       {/* Second section of the footer */}
       <div>
         {/* provide a link to your social profile */}
-        <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
-          Find us on Instagram
-        </a>
-        <FontAwesomeIcon style={{ 'margin-left': '6px' }} icon={faInstagram} />
+        <FontAwesomeIcon style={{ 'paddingRight': '6px' }} icon={faInstagram} />
+        <Link href="https://www.instagram.com/digital_arts_computing/?hl=en" target="_blank" rel="noopener noreferrer">
+        digital_arts_computing
+        </Link>
+        
         <br></br>
-        <a href="https://www.instagram.com/digital_arts_computing/?hl=en">
+        <FontAwesomeIcon style={{ 'paddingRight': '6px' }} icon={faBookOpen} />
+        <Link href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer">
           Check out our zine
-        </a>
+        </Link>
       </div>
     </footer>
   );

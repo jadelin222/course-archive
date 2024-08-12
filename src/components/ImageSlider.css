@@ -1,0 +1,28 @@
+/* .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .buttons-container {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+  }
+  
+  .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below the image */
+  }
+  
+  button {
+    margin: 0 10px;
+    text-decoration: underline;
+  }
