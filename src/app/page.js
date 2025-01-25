@@ -19,6 +19,14 @@ const slides = [
     ]
   },
   {
+    image: '/images/HomePageImages/WorksInChaos/brush2.png',
+    title: 'Works In Chaos',
+    secondaryTitle: '2025 WIP Show',
+    buttons: [
+      { text: 'Visit Page', link: '/WorksInChaos' },
+    ]
+  },
+  {
     image: '/images/HomePageImages/DamnedSoggy2023/dac_2023_damnedsoggyoatpatch.JPG',
     title: 'Damned Soggy Oat Patch',
     secondaryTitle: '2023 Degree Show',
