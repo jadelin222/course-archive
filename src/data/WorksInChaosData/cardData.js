@@ -36,7 +36,7 @@ const cardData = [
         artistName: "Moni Wang",
         keywords: "",
         description: "Inspired by rachel ",
-        images: ["/images/Artworks/DevonKennedy-images/frame0000.png","/images/Artworks/DevonKennedy-images/img1.png", "/images/Artworks/DevonKennedy-images/me_fullShrine.png"],
+        images: ["/images/2025artworks/Moni Wang/Landscape Mo-min.png","/images/Artworks/DevonKennedy-images/img1.png", "/images/Artworks/DevonKennedy-images/me_fullShrine.png"],
         link: "item5",
       },
       {

@@ -19,7 +19,7 @@ const slides = [
     ]
   },
   {
-    image: '/images/HomePageImages/WorksInChaos/brush2.png',
+    image: '/images/HomePageImages/WorksInChaos/splash image.png',
     title: 'Works In Chaos',
     secondaryTitle: '2025 WIP Show',
     buttons: [
