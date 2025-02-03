@@ -62,15 +62,15 @@ const slides = [
       { text: 'Watch Trailer', link: 'https://youtu.be/2FrPYoUPX8w?si=H1BPfuNDhsRJtBY-' }
     ]
   },
-  // {
-  //   image: '/images/HomePageImages/2020/dac_2020_remotelatency.png',
-  //   title: 'in Grid',
-  //   secondaryTitle: '2020 Residency with Arbyte',
-  //   buttons: [
-  //     { text: 'Visit Page', link: '/' },
-  //     { text: 'Arbyte', link: '/' }
-  //   ]
-  // },
+  {
+    image: '/images/HomePageImages/2020/dac_2020_remotelatency.png',
+    title: 'in Grid',
+    secondaryTitle: '2020 Residency with Arbyte',
+    buttons: [
+      { text: 'Visit Page', link: '/' },
+      { text: 'Arbyte', link: '/' }
+    ]
+  },
   {
     image: '/images/HomePageImages/2019/dac_2019_cancelmenot.png',
     title: 'Cancel Me Not',

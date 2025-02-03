@@ -19,7 +19,7 @@ import cardData from '../../../data/cardData';
 export default function Artworks() {
   const animationContainer = useRef(null);
   let animationInstance = null;
-
+//background animation code start 
   useEffect(() => {
     // Ensure lottie and the container ref are available
     if (animationContainer.current) {
@@ -59,7 +59,7 @@ export default function Artworks() {
     }
   }, []);
 
-  
+  //background animation ends
   return (
     <>
 
@@ -79,19 +79,8 @@ export default function Artworks() {
       <main className="flex min-h-screen flex-col items-center justify-between p-2" style={{ position: 'relative', zIndex: 1, paddingTop:'3rem' }}>
         <div className='content'>
           <div className='left'>
-            {/* <div>
-
-            <Link href="/">
-              <h2 style={{
-                fontSize: '48px',
-                textShadow: '2px 4px 4px rgba(46,91,173,0.6)',
-                textDecoration: 'underline',
-                textDecorationThickness: '2px'
-              }}>Fog Rot?</h2>
-            </Link>
-            </div> */}
-         
           </div>
+          {/* --------------------------------container for cards!!----------------------------------- */}
           <div className='right'>
             {/* Selected Artworks Section */}
             {/* cards here */}
