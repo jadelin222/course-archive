@@ -1,169 +1,105 @@
-"use client";
+"use client"
 
 import Image from 'next/image'
-import Link from 'next/link'
+import React from 'react';
+import NavBarHome from '../components/navBarHome';
+import HomeSlider from '../components/homeSlider';
+import HomeFooter from '../components/homeFooter';
+import Link from 'next/link';
+import '../styles/home.css';
+//This page.js file is located inside the /about directory, so its URL path becomes 'example.com/about'
 
-import lottie from 'lottie-web';
-import React, { useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import Cardd from '../components/cardd';
-
-const cardData = [
+const slides = [
   {
-    title: "First Card",
-    description: "This is the description for the first card.",
-    imageUrl: "/path/to/your/first-image.jpg",
-    link: "/first-link-path"
+    image: '/images/HomePageImages/FogRot2024/IMG_8606.JPG',
+    title: 'Fog Rot',
+    secondaryTitle: '2024 Degree Show',
+    buttons: [
+      { text: 'Visit Page', link: '/FogRot2024' },
+    ]
   },
   {
-    title: "Second Card",
-    description: "This is the description for the second card.",
-    imageUrl: "/path/to/your/second-image.jpg",
-    link: "/second-link-path"
+    image: '/images/HomePageImages/WorksInChaos/splash image.png',
+    title: 'Works In Chaos',
+    secondaryTitle: '2025 WIP Show',
+    buttons: [
+      { text: 'Visit Page', link: '/WorksInChaos' },
+    ]
   },
-  // Add more card objects as needed
+  {
+    image: '/images/HomePageImages/DamnedSoggy2023/dac_2023_damnedsoggyoatpatch.JPG',
+    title: 'Damned Soggy Oat Patch',
+    secondaryTitle: '2023 Degree Show',
+    buttons: [
+      { text: 'Visit Page', link: 'https://damnedsoggyoatpatch.com/' },
+      { text: 'Read More on Clot', link: 'https://clotmag.com/oped/art-to-break-the-stakes-of-pervasive-digital-smoothness ' }
+    ]
+  },
+  {
+    image: '/images/HomePageImages/Ep2022/dac_2022_ephermerence.png',
+    title: 'EPHEMERENCE',
+    secondaryTitle: '2022 Degree Show',
+    buttons: [
+      { text: 'Visit Page', link: 'https://ephemerence.goldcomparts.show/' },
+      { text: 'Read More on Clot', link: 'https://clotmag.com/news/exhibition-ephemerence-by-goldsmiths-digital-arts-computing' }
+    ]
+  },
+  {
+    image: '/images/HomePageImages/2021/dac_2021_third_ashleyhi.jpeg',
+    title: 'Third_',
+    secondaryTitle: '2021 Degree Show',
+    buttons: [
+      { text: 'Visit Page', link: 'https://third.goldcomparts.show/' },
+      { text: 'Showcase Video', link: 'https://www.youtube.com/watch?v=3eKjXzT5QBI' }
+    ]
+  },
+  {
+    image: '/images/HomePageImages/2020/dac_2020_remotelatency.png',
+    title: 'Remote Latency',
+    secondaryTitle: '2020 Degree Show',
+    buttons: [
+      { text: 'Visit Page', link: 'https://remotelatency.com/' },
+      { text: 'Watch Trailer', link: 'https://youtu.be/2FrPYoUPX8w?si=H1BPfuNDhsRJtBY-' }
+    ]
+  },
+  {
+    image: '/images/HomePageImages/2020/dac_2020_remotelatency.png',
+    title: 'in Grid',
+    secondaryTitle: '2020 Residency with Arbyte',
+    buttons: [
+      { text: 'Visit Page', link: '/' },
+      { text: 'Arbyte', link: '/' }
+    ]
+  },
+  {
+    image: '/images/HomePageImages/2019/dac_2019_cancelmenot.png',
+    title: 'Cancel Me Not',
+    secondaryTitle: '2019 Degree Show',
+    buttons: [
+      { text: 'Watch Trailer', link: 'https://www.youtube.com/watch?v=4VwsUvqVfqU' },
+    ]
+  },
+  {
+    image: '/images/HomePageImages/2018/dac_2018_jinia tasnin.jpg',
+    title: 'DAC Degree Show',
+    secondaryTitle: '2018 Degree Show',
+    buttons: [
+      { text: 'Watch Trailer', link: 'https://www.youtube.com/watch?v=mwvWKQxMBSk' },
+    ]
+  },
+  // Add more here
 ];
-
-//The page.js file is the default 'page' of it's respective directory. This is the default 'home' page, so it's URL path will be 'example.com/'
-
-export default function Home() {
-  const animationContainer = useRef(null);
-  let animationInstance = null;
-
-  useEffect(() => {
-    // Ensure lottie and the container ref are available
-    if (animationContainer.current) {
-      animationInstance = lottie.loadAnimation({
-        container: animationContainer.current, // the dom element that will contain the animation
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: 'jsonAnims/fogrot.json',
-        rendererSettings: {
-          // preserveAspectRatio: 'none' // This will stretch the animation to fill the container
-          preserveAspectRatio: 'xMidYMid slice'
-        },
-      });
-
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        const scrollMax = document.documentElement.scrollHeight - window.innerHeight+3;
-        // const scrollMax = document.documentElement.scrollHeight;
-        
-        // Calculate the current frame of the lottie animation
-        const currentFrame = animationInstance.totalFrames * (scrollPosition / scrollMax);
-        
-        // Go to the calculated frame and stop there
-        animationInstance.goToAndStop(currentFrame, true);
-      };
-
-      // Add event listener for scroll
-      window.addEventListener('scroll', handleScroll);
-
-      // Clean up function
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-        animationInstance.destroy();
-      };
-      
-    }
-  }, []);
-
-  
+export default function HomePage() {
   return (
     <>
-
-      {/* Full-screen Animation container */}
-      <div 
-        ref={animationContainer} 
-        style={{
-          position: 'fixed', // Use 'absolute' if you don't want it to stay fixed during scroll
-          top: 0,
-          left: 0,
-          width: '100vw',
-          // height: '100vh', //
-          height:'100%',
-          zIndex: -1, // Ensure it stays behind other content
-        }}
-      ></div>
-      
-      <main className="flex min-h-screen flex-col items-center justify-between p-24" style={{ position: 'relative', zIndex: 1 }}>
-        <div className='content'>
-          <div className='left'>
-            <div
-            style={{
-              background: 'linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0.2))',
-              backdropFilter: 'blur(10px)', 
-              WebkitBackdropFilter: 'blur(10px)', // For Safari browser support
-              // color: 'black', // Adjust the text color 
-              padding: '20px',
-              // margin: '20px',
-              // borderRadius: '10px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
-              // maxWidth: '40vw', 
-              lineHeight: '1.6', 
-              // fontSize: '18px', 
-              // fontWeight: 'normal', 
-            }
-            }>   The BSc Digital Arts Computing cohort present their degree show exhibition &apos;Fog Rot&apos;. Working at the hybrid edges between art and technology, its artists exhibit work spanning sculpture, multimedia installation, performance, durational art, immersive soundscapes, and more. &apos;Fog Rot&apos; explores cultural conditions of forgetting and the transience of memory in times of constant change and optimisation. By positioning &apos;Fog&apos; and &apos;Rot&apos; as an anagram for &apos;forgot&apos;, we suggest that we have even forgotten what it is to forget in the first place. Processes of memory decay can be paralleled to ecological processes of decomposition, where dampness grows, with slowness, moving in uncanny and ghostlike ways. What can slowness offer us in the face of ongoing change? &apos;Fog Rot&apos; questions the role of technology in contributing to accelerated narratives of catastrophe, asking how digital decay can offer a different language for understanding the material relationships between technology, art and the ways in which forgetting gives us the task of re-remembering what it is that we are trying to say.
-            </div>
-              <div
-                style={{
-                  background: 'linear-gradient(to top right, rgba(200,200,255,0.1), rgba(255,255,255,0.2))',
-                  backdropFilter: 'blur(10px)',
-                  WebkitBackdropFilter: 'blur(10px)', // For Safari browser support
-                  padding: '20px', 
-                  // margin: '20px', 
-                
-                  // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
-                
-                }
-                }> 
-                  Guest-talk Schedule?
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-                  <br></br>
-                  xxxxx/xxx/xxx/  ssssssdhdjdj
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <img src="/images/StjamesHatchamresized.jpg" alt="Descriptive Alt Text" style={{ marginRight: '10px', width: '80%' }} />
-              <a href="https://online.fliphtml5.com/tljyw/cccr/#p=1" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
-                Read our Zine online
-              </a>
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-              <i className="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> {/* Replace 'fa-icon-name' with your specific icon class name */}
-            </div>
-          </div>
-          <div className='right'>
-            Selected Artworks Section
-            {/* cards here */}
-            <div>
-              {cardData.map((card, index) => (
-                <Cardd
-                  key={index}
-                  title={card.title}
-                  description={card.description}
-                  imageUrl={card.imageUrl}
-                  link={card.link}
-                />
-              ))}
-            </div>
-     
-          </div>
-        </div>
-       
-      
-      </main>
+      <NavBarHome /> {/* This ensures NavBarHome is at the top level */}
+      {/* <main className="flex min-h-screen flex-col items-center justify-between p-24"> */}
+      <HomeSlider slides={slides} />
+      <HomeFooter />
+        {/* <Link href="/FogRot2024" rel="noopener noreferrer">
+          Fogrot page
+        </Link> */}
+      {/* </main> */}
     </>
   );
 }
-
