@@ -65,7 +65,38 @@ const ImageCarousel = ({ images }) => {
     );
 };
 
+//  Helper to get a random item from an array
+function getRandomItem(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+// Select n random artworks (excluding a specific path)
+function getRandomArtworks(data, count) {
+    // 1. First, filter out the works that contain specific paths
+    // const filteredData = data.filter(artwork =>
+    //     !artwork.images.some(image =>
+    //         image.includes('/images/Artworks/DevonKennedy-images/')
+    //     )
+    // );
+
+    // 2. Randomly select from the filtered array
+    const shuffled = [...filteredData].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+
 export default function Uncertain2026Page() {
+    // Randomly select n works
+    const randomArtworks = getRandomArtworks(cardData, 6);
+
+    // Convert to the format required for the carousel
+    const carouselImages = randomArtworks.map((artwork, index) => ({
+        id: index + 1,
+        src: getRandomItem(artwork.images), // Use the first picture of each work
+        alt: `${artwork.title} by ${artwork.artistName}`,
+        artworkData: artwork // Retain the complete work data for subsequent use
+    }));
+
   return (
     <>
 
@@ -82,14 +113,16 @@ export default function Uncertain2026Page() {
             </p>
         </div>
 
-        <div className="mt-10 flex gap-4">
+        <ImageCarousel images={carouselImages} />
+
+        {/* <div className="mt-10 flex gap-4">
             <Link
             href="/Uncertain2026/Artworks"
             className="px-6 py-3 border border-black rounded-lg hover:bg-white/50 hover:text-black transition mt-[100px]"
             >
             View Artworks
             </Link>
-        </div>
+        </div> */}
         </main>
 
     </>
