@@ -11,11 +11,11 @@ import '../styles/home.css';
 
 const slides = [
   {
-    image: '/images/HomePageImages/2026_HiddenVein/WebsiteCover(max)RED_edit.PNG',
+    image: '/images/HomePageImages/2026_HiddenVein/WebsiteCover(max)BLUE_edit4.PNG',
     title: 'HiddenVeins',
     secondaryTitle: '2026 Degree Show',
     buttons: [
-      //{ text: 'Degree Show', link: '/2026_Final_HiddenVein' },
+      // { text: 'Degree Show', link: '/2026_Final_HiddenVein' },
       { text: 'WIP Show', link: '/2026_WIP_uncertain' },
     ]
   },

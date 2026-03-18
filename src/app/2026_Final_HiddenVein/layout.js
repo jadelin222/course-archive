@@ -1,14 +1,11 @@
-import '../../styles/globals.css';
-import NavBarWCC from '../../components/physarum-polycephalumNav';
-// import Footer from '../components/footer';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-// Prevent fontawesome from adding its CSS since we did it manually above:
+import '../../styles/globals.css'
+import NavBarWIC from '../../components/uncertainNav';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
 
 export const metadata = {
-  title: 'Digital Arts Computing - Degree Show 2025',
-  description: '2025 DAC Degree Show Exhibition Page - physarum-polycephalum',
+  title: 'Digital Arts Computing - Hidden Veins',
+  description: '2026 DAC Degree Show Exhibition Page',
 }
 
 export default function RootLayout({ children }) {
@@ -16,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
         <body>
           <div>
-            <NavBarWCC/>
+            {/* <NavBarWIC/> */}
           </div>
          {children}
          {/* Include the Footer component */}
@@ -24,10 +21,4 @@ export default function RootLayout({ children }) {
         </body>
     </html>
   )
-  
-  
-  
-  
-  
-}
-
+  }

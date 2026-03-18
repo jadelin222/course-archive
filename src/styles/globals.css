@@ -136,9 +136,9 @@ body {
 
 /* Exhibition information styles */
 .exhibition-info {
-  position: fixed;
-  top: 60px;
-  left: 20px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
   color: rgba(255, 255, 255, 0.9);
   font-family: 'Garamond';
   z-index: 1000;
@@ -155,7 +155,7 @@ body {
 }
 
 .exhibition-info .date {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 6px;
@@ -165,7 +165,7 @@ body {
 .exhibition-info .hours,
 .exhibition-info .duration,
 .exhibition-info .location {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Responsive design */

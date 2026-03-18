@@ -18,7 +18,7 @@ const ImageCarousel = ({ images }) => {
     }, [images.length]);
 
     return (
-        <div className="relative w-full max-w-6xl h-[40rem] my-8">
+        <div className="relative w-full max-w-3xl h-[24rem] my-8">
             {/*  Show 3 slides simultaneously to create a layered effect */}
             {images.map((image, index) => {
                 // Calculate the position offset of the current slide
@@ -49,7 +49,7 @@ const ImageCarousel = ({ images }) => {
             })}
 
             {/* Navigation dots */}
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-40">
+            <div className="absolute -bottom-6 left-0 right-0 flex justify-center gap-2 z-40">
                 {images.map((_, index) => (
                     <button
                         key={index}
@@ -73,11 +73,11 @@ function getRandomItem(array) {
 // Select n random artworks (excluding a specific path)
 function getRandomArtworks(data, count) {
     // 1. First, filter out the works that contain specific paths
-    // const filteredData = data.filter(artwork =>
-    //     !artwork.images.some(image =>
-    //         image.includes('/images/Artworks/DevonKennedy-images/')
-    //     )
-    // );
+    const filteredData = data.filter(artwork =>
+        !artwork.images.some(image =>
+            image.includes('/images/2026_uncertain/Y3/Freya/')
+        )
+    );
 
     // 2. Randomly select from the filtered array
     const shuffled = [...filteredData].sort(() => 0.5 - Math.random());
