@@ -11,7 +11,7 @@ import '../styles/home.css';
 
 const slides = [
   {
-    image: '/images/HomePageImages/2026_HiddenVein/2026_WebsiteCover.PNG',
+    image: '/images/HomePageImages/2026_HiddenVein/2026_WebsiteCover.png',
     title: 'HiddenVeins',
     secondaryTitle: '2026 Degree Show',
     buttons: [
