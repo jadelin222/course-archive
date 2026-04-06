@@ -1,10 +1,16 @@
-"use client";
+'use client';
 
 import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic';
 import { useState, useEffect } from 'react'
-import UncertainBackground from "../../components/uncertain_bg"
+// import UncertainBackground from "../../components/uncertain_bg"
 import cardData from '../../data/uncertain/cardData';
+
+const UncertainBackground = dynamic(
+  () => import('../../components/uncertain_bg'),
+  { ssr: false }
+);
 
 // Carousel component
 const ImageCarousel = ({ images }) => {
