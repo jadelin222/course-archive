@@ -1,0 +1,132 @@
+.title{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.smalltitle{
+  font-weight: bold;
+  font-size: 26px;
+}
+.workshopDes{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; 
+  padding: 4rem;
+}
+.guestLink{
+  color: blue;
+  text-decoration: underline;
+ 
+}
+
+.faIcon{
+  padding-left: 0.25rem;
+}
+.workshopInfo {
+  flex: 2; 
+  padding-right: 1.5rem; 
+}
+
+.sideBar {
+  flex: 1; 
+  position: sticky;
+  top: 1.5rem; 
+  height: fit-content;
+}
+.workshopMaintxt {
+  line-height: 1.6;
+}
+
+.guestCard {
+  display: flex;
+  /* align-items: flex-start; */
+  margin-bottom: 20px;
+  padding: 2rem 0;
+  /* background-color: #f9f9f9;  */
+  border-bottom: 1px solid white;
+}
+.guestCardImageContainer {
+  flex: 0 0 25vw; 
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+
+}
+.guestImg {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+
+}
+.cardContent {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.guestName {
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
+
+.guestBio {
+  font-size: 16px; 
+  margin-bottom: 1rem;
+}
+@media (max-width: 1100px) {
+  .title{
+    font-size: 26px;
+  }
+  .guestCard {
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    /* margin-bottom: 20px;
+    padding: 2rem 0; */
+   
+  
+  }
+  .guestCardImageContainer {
+    width: 100%;
+    max-width: 45vw;
+  max-height: 35vh;
+  overflow: hidden;
+  align-self: center; 
+  }
+  .guestImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+  }
+  .mainContainer {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+  }
+
+  .workshopInfo,
+  .sideBar {
+    flex: 1 0 100%; 
+    padding-right: 0;
+  }
+
+  .sideBar {
+    order: 2; 
+  }
+  .cardContent{
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 768px){
+  .guestBio{
+    font-size: 13px;
+    /* margin-bottom: 1rem; */
+  }
+}

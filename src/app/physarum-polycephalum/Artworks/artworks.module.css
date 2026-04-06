@@ -1,0 +1,345 @@
+.main{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+}
+.cardsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr)); /* Creates columns that are at least 250px wide */
+  gap: 20px;
+  padding: 5rem 0;
+}
+.cardSocialLink{
+  text-decoration: underline;
+  display: inline-block; 
+  /* margin-right: 0.5rem; */
+}
+.title{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 26px;
+}
+.title, .text, .cardSocialLink {
+  margin-bottom: 1rem; 
+}
+
+.text {
+  line-height: 1.6;
+  max-width: 80ch; 
+  text-align: justify;
+}
+
+.text a {
+  color: rgb(14, 86, 98);
+}
+
+.socialLinkcontiner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.socialLinkcontiner a {
+  /* text-decoration-line: none; */
+  color: rgb(14, 86, 98);
+}
+
+.titleArtistContainer{
+  align-self: flex-start; 
+  width: 100%; 
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 1px;
+}
+
+.imgContainer {
+  /* max-height: 100vh; */
+  max-width: 80ch; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  color: rgb(14, 86, 98);
+}
+
+.imgContainer button {
+  /* text-shadow: white 1px 0 10px; */
+  /* background: rgba(255,255,255,1); */
+  color:white;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  text-decoration-line: none;
+  /* border-radius: 1px; */
+}
+
+.imgContainer img {
+  max-height: 70vh;
+ /* width: calc(50% - 0.8rem); */
+ /* height: 40vh; */
+ object-fit: cover;
+}
+
+.backToGallery {
+  color: rgb(14, 86, 98);
+  border-bottom: 20px;
+  background: white;
+  padding-left: 10px; 
+  padding-right: 10px; 
+  padding-top: 2px;
+  border-radius: 1px;
+}
+
+@media (max-width: 768px) {
+  
+      .socialLinkcontiner{
+        justify-content: none;
+      }
+      .imgContainer{
+        flex-direction: column;
+        flex: none;
+        height: auto; 
+      }
+      .main{
+          padding: 1rem;
+      }
+      .imgContainer img {
+         
+          max-width: 100%;
+        
+      }
+      .cardsContainer{
+          grid-template-columns: 1fr;
+      }
+      .text {
+          max-width: 100%;
+      }
+      .cardsContainer{
+        
+          padding: 3rem 0;
+      }
+    
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #000;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  display: block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 220, 50, 0.3);
+  outline: none;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/2;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: rgba(255, 220, 50, 0.9);
+  margin: 0 0 0.5rem 0;
+}
+
+.artist {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 1rem 0;
+}
+
+.viewDetails {
+  display: inline-block;
+  color: rgba(255, 220, 50, 0.9);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.card:hover .viewDetails {
+  color: rgba(255, 220, 50, 1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.galleryContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.galleryCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cellOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cellOverlay a {
+  pointer-events: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.cellOverlay a:hover {
+  transform: scale(1.1);
+}
+
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loadingOverlay p {
+  color: rgba(255, 220, 50, 0.9);
+  font-size: 1.2rem;
+  text-align: center;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.artworkInfo {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.artworkInfo h3 {
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+  color: rgba(255, 220, 50, 0.9);
+  font-weight: normal;
+}
+
+.artworkInfo p {
+  font-size: 1rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navigation {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.navButton {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.navButton:hover {
+  background: rgba(255, 220, 50, 0.2);
+  border-color: rgba(255, 220, 50, 0.4);
+}
+
+@media (max-width: 768px) {
+  .artworkInfo {
+    width: 80%;
+    padding: 10px 15px;
+  }
+  
+  .artworkInfo h3 {
+    font-size: 1rem;
+  }
+  
+  .artworkInfo p {
+    font-size: 0.9rem;
+  }
+}

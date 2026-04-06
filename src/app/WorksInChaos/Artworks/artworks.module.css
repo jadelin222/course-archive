@@ -1,0 +1,130 @@
+.main{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr)); /* Creates columns that are at least 250px wide */
+    gap: 20px;
+    padding: 5rem 0;
+}
+.cardSocialLink{
+    text-decoration: underline;
+    display: inline-block; 
+    /* margin-right: 0.5rem; */
+}
+.title{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+}
+.title, .text, .cardSocialLink {
+    margin-bottom: 1rem; 
+}
+
+.text {
+    line-height: 1.6;
+    max-width: 80ch; 
+    text-align: justify;
+}
+
+.text a {
+    color: rgb(14, 86, 98);
+}
+
+.socialLinkcontiner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.socialLinkcontiner a {
+    /* text-decoration-line: none; */
+    color: rgb(14, 86, 98);
+}
+
+.titleArtistContainer{
+    align-self: flex-start; 
+    width: 100%; 
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+}
+
+.imgContainer {
+    /* max-height: 100vh; */
+    max-width: 80ch; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    color: rgb(14, 86, 98);
+}
+
+.imgContainer button {
+    /* text-shadow: white 1px 0 10px; */
+    /* background: rgba(255,255,255,1); */
+    color:white;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    text-decoration-line: none;
+    /* border-radius: 1px; */
+}
+
+.imgContainer img {
+    max-height: 70vh;
+   /* width: calc(50% - 0.8rem); */
+   /* height: 40vh; */
+   object-fit: cover;
+}
+
+.backToGallery {
+    color: rgb(14, 86, 98);
+    border-bottom: 20px;
+    background: white;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-top: 2px;
+    border-radius: 1px;
+}
+
+@media (max-width: 768px) {
+    
+        .socialLinkcontiner{
+          justify-content: none;
+        }
+        .imgContainer{
+          flex-direction: column;
+          flex: none;
+          height: auto; 
+        }
+        .main{
+            padding: 1rem;
+        }
+        .imgContainer img {
+           
+            max-width: 100%;
+          
+        }
+        .cardsContainer{
+            grid-template-columns: 1fr;
+        }
+        .text {
+            max-width: 100%;
+        }
+        .cardsContainer{
+          
+            padding: 3rem 0;
+        }
+      
+}

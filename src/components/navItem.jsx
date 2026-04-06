@@ -6,13 +6,22 @@
 import Link from "next/link";
 import './navItemStyle.css';
 
-const NavItem = ({children, href, active}) => {
-    return(
-        <Link href={href} className={`nav__item ${active ? "active" : ""}`}>
-            {children}
-            {/* {text} */}
-        </Link>
-    );
+const NavItem = ({ children, href, active, newTab = false, className }) => {
+    const combinedClassName = `nav__item ${active ? "active" : ""} ${className || ''}`;
+    
+    if (newTab) {
+        return (
+            <a href={href} target="_blank" rel="noopener noreferrer" className={combinedClassName}>
+                {children}
+            </a>
+        );
+    } else {
+        return (
+            <Link href={href} className={combinedClassName}>
+                {children}
+            </Link>
+        );
+    }
 }
 
 export default NavItem;

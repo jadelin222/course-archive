@@ -1,4 +1,12 @@
-/* .nav__item {
-    font-size: 21px;
+.nav__item {
+    font-size: 26px;
     margin: 1rem;
-} */
+    font-weight: bold;
+}
+@media (max-width: 768px){
+    .nav__item {
+        font-size: 20px;
+        margin: 0.5rem;
+        /* font-weight: bold; */
+    }
+}
